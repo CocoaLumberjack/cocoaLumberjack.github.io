@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Performance  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Performance  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">CocoaLumberjack Docs</a> (66% documented)</p>
+        <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">CocoaLumberjack Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Performance  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="arc.html">ARC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="appcode-support.html">AppCode-support</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="architecture.html">Architecture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="customcontext.html">CustomContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="customformatters.html">CustomFormatters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="customloglevels.html">CustomLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="customloggers.html">CustomLoggers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="dynamicloglevels.html">DynamicLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="finegrainedlogging.html">FineGrainedLogging</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="gettingstarted.html">GettingStarted</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="logfilemanagement.html">LogFileManagement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="perloggerloglevels.html">PerLoggerLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="peruserloglevels.html">PerUserLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="performance.html">Performance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="problemsolution.html">ProblemSolution</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="readme.html">README</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="xcodecolors.html">XcodeColors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="xcodetricks.html">XcodeTricks</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/DDASLLogCapture.html">DDASLLogCapture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDASLLogger.html">DDASLLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDAbstractLogger.html">DDAbstractLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDFileLogger.html">DDFileLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDLog.html">DDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDLogFileFormatterDefault.html">DDLogFileFormatterDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDLogFileInfo.html">DDLogFileInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDLogFileManagerDefault.html">DDLogFileManagerDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDLogMessage.html">DDLogMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDLoggerInformation.html">DDLoggerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDOSLogger.html">DDOSLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDTTYLogger.html">DDTTYLogger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@kDDASLDDLogValue">kDDASLDDLogValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@kDDASLKeyDDLog">kDDASLKeyDDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@kDDDefaultLogFilesDiskQuota">kDDDefaultLogFilesDiskQuota</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@kDDDefaultLogMaxFileSize">kDDDefaultLogMaxFileSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@kDDDefaultLogMaxNumLogFiles">kDDDefaultLogMaxNumLogFiles</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@kDDDefaultLogRollingFrequency">kDDDefaultLogRollingFrequency</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/DDLogFlag.html">DDLogFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/DDLogLevel.html">DDLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/DDLogMessageOptions.html">DDLogMessageOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/DDLogFileManager.html">DDLogFileManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/DDLogFormatter.html">DDLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/DDLogger.html">DDLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/DDRegisteredDynamicLogging.html">DDRegisteredDynamicLogging</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Type Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@DDExtractFileNameWithoutExtension">DDExtractFileNameWithoutExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:DDTTYLogger.h@F@DDMakeColor">DDMakeColor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p>Analysis of performance with benchmarks</p>
+<h2 id='introduction' class='heading'>Introduction</h2>
+
+<p>Lumberjack was designed from the start to be fast. And fast it is! The project itself comes with a suite of benchmarking tests. With a simple build-and-go in Xcode you can run them yourself. But the main reason the benchmarking tests are there is so the project maintainers never neglect the performance factor.</p>
+
+<p>But what makes lumberjack so fast?</p>
+<h3 id='grand-central-dispatch' class='heading'>Grand Central Dispatch</h3>
+
+<p>Lumberjack takes advantage of <a href="http://developer.apple.com/mac/articles/cocoa/introblocksgcd.html">grand central dispatch</a> (GCD) if it is available on the target platform. For example, the framework will execute each individual logger concurrently. This means that the framework can write log messages to the console and a file at the same time, using multiple CPU cores. And GCD optimizes all this multi-threading for us automatically, meaning the framework can scale from 1 CPU core to 100.</p>
+
+<p>If GCD is not available, Lumberjack still performs excellently using traditional multi-threaded optimizations.</p>
+<h3 id='asynchronous-logging' class='heading'>Asynchronous Logging</h3>
+
+<p>Lumberjack has the ability to execute certain log statements asynchronously. (This is, of course, optional and you can disable it or fine-tune it as you see fit.)</p>
+
+<p>The default philosophy for asynchronous logging is very simple:</p>
+
+<ul>
+<li><p>Log messages with errors should be executed synchronously.</p>
+
+<blockquote>
+<p>After all, an error just occurred. The application could be unstable.\</p>
+</blockquote></li>
+<li><p>All other log messages, such as debug output, are executed asynchronously.</p>
+
+<blockquote>
+<p>After all, if it wasn&rsquo;t an error, then it was just informational output, or something the application was easily able to recover from.</p>
+</blockquote></li>
+</ul>
+
+<p>This is easily configurable. And the performance of the library does not solely rely on asynchronous logging.</p>
+<h3 id='a-better-nslog' class='heading'>A Better NSLog</h3>
+
+<p>The simple truth is that NSLog is just plain slow.</p>
+
+<p>But why? To answer that question, let&rsquo;s find out what NSLog does, and then how it does it.</p>
+
+<p>What does NSLog do exactly?</p>
+
+<p>NSLog does 2 things:</p>
+
+<ol>
+<li>It writes log messages to the Apple System Logging (asl) facility. This allows log messages to show up in Console.app.</li>
+<li>It also checks to see if the application&rsquo;s stderr stream is going to a terminal (such as when the application is being run via Xcode). If so it writes the log message to stderr (so that it shows up in the Xcode console).</li>
+</ol>
+
+<p>Writing to STDERR doesn&rsquo;t sound difficult. That can be accomplished with <a href="http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man3/printf.3.html">fprintf</a> and the <a href="http://gemma.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man4/stderr.4.html">stderr file descriptor reference</a>. But what about asl?</p>
+
+<p>The best documentation I&rsquo;ve found about ASL is a 10 part blog post from Peter Hosey: <a href="http://boredzo.org/blog/archives/2008-01-20/why-asl">link</a></p>
+
+<p>Without going into too much detail, the highlight (as it concerns performance) is this:</p>
+
+<blockquote>
+<p>To send a log message to the ASL facility, you basically open a client connection to the ASL daemon and send the message. BUT - each thread must use a separate client connection. So, to be thread safe, every time NSLog is called it opens a new asl client connection, sends the message, and then closes the connection. (1) </p>
+</blockquote>
+
+<p>The lumberjack framework avoids much of the cost by creating a single re-usable asl client connection for its background logging thread.</p>
+
+<p>^1 - Assuming that NSLog acts like its open-source cousin CFShow.</p>
+<h2 id='benchmarking' class='heading'>Benchmarking</h2>
+
+<p>As mentioned earlier, the Lumberjack framework comes with a suite of benchmarking tests. You can run these benchmark tests yourself using the <q>BenchmarkMac</q> or <q>BenchmarkIPhone</q> Xcode projects. When you build-and-go, the project will output the results to the Xcode console in a human-readable format at the end of the benchmarking process. It will also output a CSV file in case you wanted to graph the results.</p>
+
+<p>There are 4 main tests. The base case for each test is a standard NSLog statement. Each test is run 20 times, from which a min, max and average time is calculated. The benchmark includes various configurations of the Lumberjack framework, such as:</p>
+
+<ul>
+<li>logging to the console only</li>
+<li>logging to a file only</li>
+<li>logging to the console &amp; file at the same time</li>
+</ul>
+<h4 id='test-1' class='heading'>Test # 1:</h4>
+
+<blockquote>
+<p>Asynchronous logging test. Execute 1,000 log statements. All lumberjack log statements are queued onto a background logging thread.</p>
+</blockquote>
+<h4 id='test-2' class='heading'>Test #2:</h4>
+
+<blockquote>
+<p>Synchronous logging test. Execute 1,000 log statements. All lumberjack log statements are executed synchronously. They may still be executed on a background logging thread, but the original log statement does not return until the logging has completed.</p>
+</blockquote>
+<h4 id='test-3' class='heading'>Test #3:</h4>
+
+<blockquote>
+<p>Real life simulation with an even spread of log statements across various levels. Execute 1,000 log statements. 25% will be above the log level and will be filtered out. 50% will be executed asynchronously. 25% will be executed synchronously.</p>
+</blockquote>
+<h4 id='test-4' class='heading'>Test #4:</h4>
+
+<blockquote>
+<p>Real life simulation with an abundance of debug log statements. Execute 1,000 log statements. 90% will be filtered out. 10% will be error messages, executed synchronously.</p>
+</blockquote>
+
+<p>The numbers for test #4 came from some projects that I&rsquo;ve worked on in the past. A bit of regex revealed that 90% of my log statements were debug messages. The other 10% were spread among the various other levels, but I wanted the benchmark test to be <q>worst case</q> with respect to this 10%.</p>
+
+<p>Note that all of these benchmark test are configurable. So if you wanted to try, for example, test #4 with different percentages, you can easily change the test yourself.</p>
+
+<p><a href="http://www.flickr.com/photos/100714763@N06/9575919309/" title="CocoaLumberjack_benchmark_iPhone3GS by robbiehanson, on Flickr"><img src="http://farm6.staticflickr.com/5465/9575919309_522d129a6b_c.jpg" width="800" height="567" alt="CocoaLumberjack_benchmark_iPhone3GS"></a>
+<br/><br/><br/><br/>
+<a href="http://www.flickr.com/photos/100714763@N06/9578712828/" title="CocoaLumberjack_benchmark_iPad by robbiehanson, on Flickr"><img src="http://farm6.staticflickr.com/5335/9578712828_8a1c717c4a_c.jpg" width="800" height="567" alt="CocoaLumberjack_benchmark_iPad"></a>
+<br/><br/><br/><br/>
+<a href="http://www.flickr.com/photos/100714763@N06/9575918737/" title="CocoaLumberjack_benchmark_iMac by robbiehanson, on Flickr"><img src="http://farm6.staticflickr.com/5541/9575918737_fd21649c6c_c.jpg" width="800" height="567" alt="CocoaLumberjack_benchmark_iMac"></a>
+<br/><br/><br/><br/>
+<a href="http://www.flickr.com/photos/100714763@N06/9575919599/" title="CocoaLumberjack_benchmark_powerMac by robbiehanson, on Flickr"><img src="http://farm4.staticflickr.com/3727/9575919599_c08287fefe_c.jpg" width="800" height="567" alt="CocoaLumberjack_benchmark_powerMac"></a></p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2018-09-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
