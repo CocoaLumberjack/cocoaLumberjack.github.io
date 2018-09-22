@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DDLogger Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/DDLogger" class="dashAnchor"></a>
+    <a title="DDLogger Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CocoaLumberjack Docs</a> (67% documented)</p>
+        <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CocoaLumberjack Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DDLogger Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CLIColor.html">CLIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDASLLogCapture.html">DDASLLogCapture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDASLLogger.html">DDASLLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDAbstractLogger.html">DDAbstractLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDFileLogger.html">DDFileLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLog.html">DDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileFormatterDefault.html">DDLogFileFormatterDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileInfo.html">DDLogFileInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileManagerDefault.html">DDLogFileManagerDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogMessage.html">DDLogMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLoggerInformation.html">DDLoggerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDOSLogger.html">DDOSLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDTTYLogger.html">DDTTYLogger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDASLDDLogValue">kDDASLDDLogValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDASLKeyDDLog">kDDASLKeyDDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogFilesDiskQuota">kDDDefaultLogFilesDiskQuota</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogMaxFileSize">kDDDefaultLogMaxFileSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogMaxNumLogFiles">kDDDefaultLogMaxNumLogFiles</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogRollingFrequency">kDDDefaultLogRollingFrequency</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogFlag.html">DDLogFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogLevel.html">DDLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogMessageOptions.html">DDLogMessageOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogFileManager.html">DDLogFileManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogFormatter.html">DDLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogger.html">DDLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDRegisteredDynamicLogging.html">DDRegisteredDynamicLogging</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@DDExtractFileNameWithoutExtension">DDExtractFileNameWithoutExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:DDTTYLogger.h@F@DDMakeColor">DDMakeColor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DDLogger</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">DDLogger</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>This protocol describes a basic logger behavior. 
+Basically, it can log messages, store a logFormatter plus a bunch of optional behaviors.
+(i.e. flush, get its loggerQueue, get its name, &hellip;</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)DDLogger(im)logMessage:"></a>
+                    <a name="//apple_ref/objc/Method/-logMessage:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)DDLogger(im)logMessage:">-logMessage:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The log message method</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">logMessage</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/DDLogMessage.html">DDLogMessage</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">logMessage</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">log</span><span class="p">(</span><span class="n">message</span> <span class="nv">logMessage</span><span class="p">:</span> <span class="kt"><a href="../Classes/DDLogMessage.html">DDLogMessage</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>logMessage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the message (model)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L570">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)DDLogger(py)logFormatter"></a>
+                    <a name="//apple_ref/objc/Property/logFormatter" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)DDLogger(py)logFormatter">logFormatter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Formatters may optionally be added to any logger.</p>
+
+<p>If no formatter is set, the logger simply logs the message as it is given in logMessage,
+ or it may use its own built in formatting style.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/DDLogFormatter.html">DDLogFormatter</a></span><span class="o">&gt;</span> <span class="n">_Nonnull</span> <span class="n">logFormatter</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">logFormatter</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DDLogFormatter.html">DDLogFormatter</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L578">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)DDLogger(im)didAddLogger"></a>
+                    <a name="//apple_ref/objc/Method/-didAddLogger" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)DDLogger(im)didAddLogger">-didAddLogger</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Since logging is asynchronous, adding and removing loggers is also asynchronous.
+ In other words, the loggers are added and removed at appropriate times with regards to log messages.</p>
+
+<ul>
+<li>Loggers will not receive log messages that were executed prior to when they were added.</li>
+<li>Loggers will not receive log messages that were executed after they were removed.</li>
+</ul>
+
+<p>These methods are executed in the logging thread/queue.
+ This is the same thread/queue that will execute every logMessage: invocation.
+ Loggers may use these methods for thread synchronization or other setup/teardown tasks.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didAddLogger</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didAdd</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L593">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)DDLogger(im)didAddLoggerInQueue:"></a>
+                    <a name="//apple_ref/objc/Method/-didAddLoggerInQueue:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)DDLogger(im)didAddLoggerInQueue:">-didAddLoggerInQueue:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Since logging is asynchronous, adding and removing loggers is also asynchronous.
+ In other words, the loggers are added and removed at appropriate times with regards to log messages.</p>
+
+<ul>
+<li>Loggers will not receive log messages that were executed prior to when they were added.</li>
+<li>Loggers will not receive log messages that were executed after they were removed.</li>
+</ul>
+
+<p>These methods are executed in the logging thread/queue given in parameter.
+ This is the same thread/queue that will execute every logMessage: invocation.
+ Loggers may use the queue parameter to set specific values on the queue with dispatch_set_specific() function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didAddLoggerInQueue</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">dispatch_queue_t</span><span class="p">)</span><span class="nv">queue</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didAdd</span><span class="p">(</span><span class="k">in</span> <span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L606">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)DDLogger(im)willRemoveLogger"></a>
+                    <a name="//apple_ref/objc/Method/-willRemoveLogger" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)DDLogger(im)willRemoveLogger">-willRemoveLogger</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>See the above description for <code>didAddLoger</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">willRemoveLogger</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">willRemove</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L611">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)DDLogger(im)flush"></a>
+                    <a name="//apple_ref/objc/Method/-flush" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)DDLogger(im)flush">-flush</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Some loggers may buffer IO for optimization purposes.
+ For example, a database logger may only save occasionaly as the disk IO is slow.
+ In such loggers, this method should be implemented to flush any pending IO.</p>
+
+<p>This allows invocations of DDLog&rsquo;s flushLog method to be propogated to loggers that need it.</p>
+
+<p>Note that DDLog&rsquo;s flushLog method is invoked automatically when the application quits,
+ and it may be also invoked manually by the developer prior to application crashes, or other such reasons.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">flush</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">flush</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L623">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)DDLogger(py)loggerQueue"></a>
+                    <a name="//apple_ref/objc/Property/loggerQueue" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)DDLogger(py)loggerQueue">loggerQueue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Each logger is executed concurrently with respect to the other loggers.
+ Thus, a dedicated dispatch queue is used for each logger.
+ Logger implementations may optionally choose to provide their own dispatch queue.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@optional</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">dispatch_queue_t</span> <span class="n">_Nonnull</span> <span class="n">loggerQueue</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="k">var</span> <span class="nv">loggerQueue</span><span class="p">:</span> <span class="kt">DispatchQueue</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L630">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)DDLogger(py)loggerName"></a>
+                    <a name="//apple_ref/objc/Property/loggerName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)DDLogger(py)loggerName">loggerName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If the logger implementation does not choose to provide its own queue,
+ one will automatically be created for it.
+ The created queue will receive its name from this method.
+ This may be helpful for debugging or profiling reasons.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@optional</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">loggerName</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="k">var</span> <span class="nv">loggerName</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L638">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2018-09-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DDRegisteredDynamicLogging Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/DDRegisteredDynamicLogging" class="dashAnchor"></a>
+    <a title="DDRegisteredDynamicLogging Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CocoaLumberjack Docs</a> (67% documented)</p>
+        <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CocoaLumberjack Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DDRegisteredDynamicLogging Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CLIColor.html">CLIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDASLLogCapture.html">DDASLLogCapture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDASLLogger.html">DDASLLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDAbstractLogger.html">DDAbstractLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDFileLogger.html">DDFileLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLog.html">DDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileFormatterDefault.html">DDLogFileFormatterDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileInfo.html">DDLogFileInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileManagerDefault.html">DDLogFileManagerDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogMessage.html">DDLogMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLoggerInformation.html">DDLoggerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDOSLogger.html">DDOSLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDTTYLogger.html">DDTTYLogger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDASLDDLogValue">kDDASLDDLogValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDASLKeyDDLog">kDDASLKeyDDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogFilesDiskQuota">kDDDefaultLogFilesDiskQuota</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogMaxFileSize">kDDDefaultLogMaxFileSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogMaxNumLogFiles">kDDDefaultLogMaxNumLogFiles</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogRollingFrequency">kDDDefaultLogRollingFrequency</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogFlag.html">DDLogFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogLevel.html">DDLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogMessageOptions.html">DDLogMessageOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogFileManager.html">DDLogFileManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogFormatter.html">DDLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogger.html">DDLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDRegisteredDynamicLogging.html">DDRegisteredDynamicLogging</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@DDExtractFileNameWithoutExtension">DDExtractFileNameWithoutExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:DDTTYLogger.h@F@DDMakeColor">DDMakeColor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DDRegisteredDynamicLogging</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">DDRegisteredDynamicLogging</span></code></pre>
+
+                </div>
+              </div>
+            <p>This protocol describes a dynamic logging component</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)DDRegisteredDynamicLogging(cpy)ddLogLevel"></a>
+                    <a name="//apple_ref/objc/Property/ddLogLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)DDRegisteredDynamicLogging(cpy)ddLogLevel">ddLogLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implement these methods to allow a file&rsquo;s log level to be managed from a central location.</p>
+
+<p>This is useful if you&rsquo;d like to be able to change log levels for various parts
+ of your code from within the running application.</p>
+
+<p>Imagine pulling up the settings for your application,
+ and being able to configure the logging level on a per file basis.</p>
+
+<p>The implementation can be very straight-forward:</p>
+<pre class="highlight objective_c"><code> <span class="k">+</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">ddLogLevel</span>
+ <span class="p">{</span>
+     <span class="k">return</span> <span class="n">ddLogLevel</span><span class="p">;</span>
+ <span class="p">}</span>
+
+ <span class="o">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">ddSetLogLevel</span><span class="o">:</span><span class="p">(</span><span class="n">DDLogLevel</span><span class="p">)</span><span class="n">level</span>
+ <span class="p">{</span>
+     <span class="n">ddLogLevel</span> <span class="o">=</span> <span class="n">level</span><span class="p">;</span>
+ <span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">setter</span><span class="o">=</span><span class="n">ddSetLogLevel</span><span class="o">:</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">class</span><span class="p">)</span>
+    <span class="n"><a href="../Enums/DDLogLevel.html">DDLogLevel</a></span> <span class="n">ddLogLevel</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">ddLogLevel</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDLogLevel.html">DDLogLevel</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L729">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2018-09-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

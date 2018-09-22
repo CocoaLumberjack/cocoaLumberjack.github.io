@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DDLogMessage Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/DDLogMessage" class="dashAnchor"></a>
+    <a title="DDLogMessage Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CocoaLumberjack Docs</a> (67% documented)</p>
+        <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CocoaLumberjack Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DDLogMessage Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CLIColor.html">CLIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDASLLogCapture.html">DDASLLogCapture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDASLLogger.html">DDASLLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDAbstractLogger.html">DDAbstractLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDFileLogger.html">DDFileLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLog.html">DDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileFormatterDefault.html">DDLogFileFormatterDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileInfo.html">DDLogFileInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileManagerDefault.html">DDLogFileManagerDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogMessage.html">DDLogMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLoggerInformation.html">DDLoggerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDOSLogger.html">DDOSLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDTTYLogger.html">DDTTYLogger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDASLDDLogValue">kDDASLDDLogValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDASLKeyDDLog">kDDASLKeyDDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogFilesDiskQuota">kDDDefaultLogFilesDiskQuota</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogMaxFileSize">kDDDefaultLogMaxFileSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogMaxNumLogFiles">kDDDefaultLogMaxNumLogFiles</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogRollingFrequency">kDDDefaultLogRollingFrequency</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogFlag.html">DDLogFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogLevel.html">DDLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogMessageOptions.html">DDLogMessageOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogFileManager.html">DDLogFileManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogFormatter.html">DDLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogger.html">DDLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDRegisteredDynamicLogging.html">DDRegisteredDynamicLogging</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@DDExtractFileNameWithoutExtension">DDExtractFileNameWithoutExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:DDTTYLogger.h@F@DDMakeColor">DDMakeColor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DDLogMessage</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">DDLogMessage</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSCopying</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="n">NSString</span> <span class="o">*</span><span class="n">_message</span><span class="p">;</span>
+  <span class="n"><a href="../Enums/DDLogLevel.html">DDLogLevel</a></span> <span class="n">_level</span><span class="p">;</span>
+  <span class="n"><a href="../Enums/DDLogFlag.html">DDLogFlag</a></span> <span class="n">_flag</span><span class="p">;</span>
+  <span class="n">NSInteger</span> <span class="n">_context</span><span class="p">;</span>
+  <span class="n">NSString</span> <span class="o">*</span><span class="n">_file</span><span class="p">;</span>
+  <span class="n">NSString</span> <span class="o">*</span><span class="n">_fileName</span><span class="p">;</span>
+  <span class="n">NSString</span> <span class="o">*</span><span class="n">_function</span><span class="p">;</span>
+  <span class="n">NSUInteger</span> <span class="n">_line</span><span class="p">;</span>
+  <span class="n">id</span> <span class="n">_tag</span><span class="p">;</span>
+  <span class="n"><a href="../Enums/DDLogMessageOptions.html">DDLogMessageOptions</a></span> <span class="n">_options</span><span class="p">;</span>
+  <span class="n">NSDate</span> <span class="o">*</span><span class="n">_timestamp</span><span class="p">;</span>
+  <span class="n">NSString</span> <span class="o">*</span><span class="n">_threadID</span><span class="p">;</span>
+  <span class="n">NSString</span> <span class="o">*</span><span class="n">_threadName</span><span class="p">;</span>
+  <span class="n">NSString</span> <span class="o">*</span><span class="n">_queueLabel</span><span class="p">;</span>
+<span class="p">}</span></code></pre>
+
+                </div>
+              </div>
+            <p>The <code>DDLogMessage</code> class encapsulates information about the log message.
+ If you write custom loggers or formatters, you will be dealing with objects of this class.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage@_message"></a>
+                    <a name="//apple_ref/objc/Ivar/_message" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage@_message">_message</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSString</span> <span class="o">*</span><span class="n">_message</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage@_level"></a>
+                    <a name="//apple_ref/objc/Ivar/_level" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage@_level">_level</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n"><a href="../Enums/DDLogLevel.html">DDLogLevel</a></span> <span class="n">_level</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage@_flag"></a>
+                    <a name="//apple_ref/objc/Ivar/_flag" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage@_flag">_flag</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n"><a href="../Enums/DDLogFlag.html">DDLogFlag</a></span> <span class="n">_flag</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage@_context"></a>
+                    <a name="//apple_ref/objc/Ivar/_context" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage@_context">_context</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSInteger</span> <span class="n">_context</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage@_file"></a>
+                    <a name="//apple_ref/objc/Ivar/_file" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage@_file">_file</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSString</span> <span class="o">*</span><span class="n">_file</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage@_fileName"></a>
+                    <a name="//apple_ref/objc/Ivar/_fileName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage@_fileName">_fileName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSString</span> <span class="o">*</span><span class="n">_fileName</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage@_function"></a>
+                    <a name="//apple_ref/objc/Ivar/_function" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage@_function">_function</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSString</span> <span class="o">*</span><span class="n">_function</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage@_line"></a>
+                    <a name="//apple_ref/objc/Ivar/_line" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage@_line">_line</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSUInteger</span> <span class="n">_line</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage@_tag"></a>
+                    <a name="//apple_ref/objc/Ivar/_tag" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage@_tag">_tag</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">id</span> <span class="n">_tag</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage@_options"></a>
+                    <a name="//apple_ref/objc/Ivar/_options" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage@_options">_options</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n"><a href="../Enums/DDLogMessageOptions.html">DDLogMessageOptions</a></span> <span class="n">_options</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage@_timestamp"></a>
+                    <a name="//apple_ref/objc/Ivar/_timestamp" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage@_timestamp">_timestamp</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSDate</span> <span class="o">*</span><span class="n">_timestamp</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage@_threadID"></a>
+                    <a name="//apple_ref/objc/Ivar/_threadID" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage@_threadID">_threadID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSString</span> <span class="o">*</span><span class="n">_threadID</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage@_threadName"></a>
+                    <a name="//apple_ref/objc/Ivar/_threadName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage@_threadName">_threadName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSString</span> <span class="o">*</span><span class="n">_threadName</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage@_queueLabel"></a>
+                    <a name="//apple_ref/objc/Ivar/_queueLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage@_queueLabel">_queueLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSString</span> <span class="o">*</span><span class="n">_queueLabel</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default <code>init</code> for empty messages.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L786">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(im)initWithMessage:level:flag:context:file:function:line:tag:options:timestamp:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithMessage:level:flag:context:file:function:line:tag:options:timestamp:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(im)initWithMessage:level:flag:context:file:function:line:tag:options:timestamp:">-initWithMessage:level:flag:context:file:function:line:tag:options:timestamp:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Standard init method for a log message object.
+ Used by the logging primitives. (And the macros use the logging primitives.)</p>
+
+<p>If you find need to manually create logMessage objects, there is one thing you should be aware of:</p>
+
+<p>If no flags are passed, the method expects the file and function parameters to be string literals.
+ That is, it expects the given strings to exist for the duration of the object&rsquo;s lifetime,
+ and it expects the given strings to be immutable.
+ In other words, it does not copy these strings, it simply points to them.
+ This is due to the fact that <strong>FILE</strong> and <strong>FUNCTION</strong> are usually used to specify these parameters,
+ so it makes sense to optimize and skip the unnecessary allocations.
+ However, if you need them to be copied you may use the options parameter to specify this.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithMessage</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">message</span>
+                                  <span class="nf">level</span><span class="p">:(</span><span class="n"><a href="../Enums/DDLogLevel.html">DDLogLevel</a></span><span class="p">)</span><span class="nv">level</span>
+                                   <span class="nf">flag</span><span class="p">:(</span><span class="n"><a href="../Enums/DDLogFlag.html">DDLogFlag</a></span><span class="p">)</span><span class="nv">flag</span>
+                                <span class="nf">context</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">context</span>
+                                   <span class="nf">file</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">file</span>
+                               <span class="nf">function</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">function</span>
+                                   <span class="nf">line</span><span class="p">:(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">line</span>
+                                    <span class="nf">tag</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">tag</span>
+                                <span class="nf">options</span><span class="p">:(</span><span class="n"><a href="../Enums/DDLogMessageOptions.html">DDLogMessageOptions</a></span><span class="p">)</span><span class="nv">options</span>
+                              <span class="nf">timestamp</span><span class="p">:(</span><span class="n">NSDate</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">timestamp</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">level</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDLogLevel.html">DDLogLevel</a></span><span class="p">,</span> <span class="nv">flag</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDLogFlag.html">DDLogFlag</a></span><span class="p">,</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">,</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDLogMessageOptions.html">DDLogMessageOptions</a></span> <span class="o">=</span> <span class="p">[],</span> <span class="nv">timestamp</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the message</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>level</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the log level</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the log flag</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the context (if any is defined)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>file</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the current file</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>function</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the current function</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>line</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the current code line</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>potential tag</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a bitmask which supports DDLogMessageCopyFile and DDLogMessageCopyFunction.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timestamp</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the log timestamp</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a new instance of a log message model object</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L815-L824">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(py)message"></a>
+                    <a name="//apple_ref/objc/Property/message" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(py)message">message</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The log message</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">message</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L833">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(py)level"></a>
+                    <a name="//apple_ref/objc/Property/level" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(py)level">level</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/DDLogLevel.html">DDLogLevel</a></span> <span class="n">level</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">level</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDLogLevel.html">DDLogLevel</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(py)flag"></a>
+                    <a name="//apple_ref/objc/Property/flag" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(py)flag">flag</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/DDLogFlag.html">DDLogFlag</a></span> <span class="n">flag</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">flag</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDLogFlag.html">DDLogFlag</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(py)context"></a>
+                    <a name="//apple_ref/objc/Property/context" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(py)context">context</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">context</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(py)file"></a>
+                    <a name="//apple_ref/objc/Property/file" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(py)file">file</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">file</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(py)fileName"></a>
+                    <a name="//apple_ref/objc/Property/fileName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(py)fileName">fileName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">fileName</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">fileName</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(py)function"></a>
+                    <a name="//apple_ref/objc/Property/function" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(py)function">function</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span> <span class="n">__nullable</span> <span class="n">function</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">function</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(py)line"></a>
+                    <a name="//apple_ref/objc/Property/line" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(py)line">line</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSUInteger</span> <span class="n">line</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">UInt</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(py)tag"></a>
+                    <a name="//apple_ref/objc/Property/tag" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(py)tag">tag</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">id</span> <span class="n">__nullable</span> <span class="n">tag</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(py)options"></a>
+                    <a name="//apple_ref/objc/Property/options" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(py)options">options</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/DDLogMessageOptions.html">DDLogMessageOptions</a></span> <span class="n">options</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDLogMessageOptions.html">DDLogMessageOptions</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(py)timestamp"></a>
+                    <a name="//apple_ref/objc/Property/timestamp" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(py)timestamp">timestamp</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSDate</span> <span class="o">*</span><span class="n">timestamp</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">timestamp</span><span class="p">:</span> <span class="kt">Date</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(py)threadID"></a>
+                    <a name="//apple_ref/objc/Property/threadID" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(py)threadID">threadID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">threadID</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">threadID</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(py)threadName"></a>
+                    <a name="//apple_ref/objc/Property/threadName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(py)threadName">threadName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">threadName</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">threadName</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDLogMessage(py)queueLabel"></a>
+                    <a name="//apple_ref/objc/Property/queueLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDLogMessage(py)queueLabel">queueLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">queueLabel</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">queueLabel</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDLog.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2018-09-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

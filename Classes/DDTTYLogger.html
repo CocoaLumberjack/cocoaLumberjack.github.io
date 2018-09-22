@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DDTTYLogger Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/DDTTYLogger" class="dashAnchor"></a>
+    <a title="DDTTYLogger Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CocoaLumberjack Docs</a> (67% documented)</p>
+        <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CocoaLumberjack Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DDTTYLogger Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CLIColor.html">CLIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDASLLogCapture.html">DDASLLogCapture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDASLLogger.html">DDASLLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDAbstractLogger.html">DDAbstractLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDFileLogger.html">DDFileLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLog.html">DDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileFormatterDefault.html">DDLogFileFormatterDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileInfo.html">DDLogFileInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileManagerDefault.html">DDLogFileManagerDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogMessage.html">DDLogMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLoggerInformation.html">DDLoggerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDOSLogger.html">DDOSLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDTTYLogger.html">DDTTYLogger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDASLDDLogValue">kDDASLDDLogValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDASLKeyDDLog">kDDASLKeyDDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogFilesDiskQuota">kDDDefaultLogFilesDiskQuota</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogMaxFileSize">kDDDefaultLogMaxFileSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogMaxNumLogFiles">kDDDefaultLogMaxNumLogFiles</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogRollingFrequency">kDDDefaultLogRollingFrequency</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogFlag.html">DDLogFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogLevel.html">DDLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogMessageOptions.html">DDLogMessageOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogFileManager.html">DDLogFileManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogFormatter.html">DDLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogger.html">DDLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDRegisteredDynamicLogging.html">DDRegisteredDynamicLogging</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@DDExtractFileNameWithoutExtension">DDExtractFileNameWithoutExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:DDTTYLogger.h@F@DDMakeColor">DDMakeColor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DDTTYLogger</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">DDTTYLogger</span> <span class="p">:</span> <span class="nc"><a href="../Classes/DDAbstractLogger.html">DDAbstractLogger</a></span> <span class="o">&lt;</span><span class="n"><a href="../Protocols/DDLogger.html">DDLogger</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>This class provides a logger for Terminal output or Xcode console output,
+ depending on where you are running your code.</p>
+
+<p>As described in the <q>Getting Started</q> page,
+ the traditional NSLog() function directs it&rsquo;s output to two places:</p>
+
+<ul>
+<li>Apple System Log (so it shows up in Console.app)</li>
+<li>StdErr (if stderr is a TTY, so log statements show up in Xcode console)</li>
+</ul>
+
+<p>To duplicate NSLog() functionality you can simply add this logger and an asl logger.
+ However, if you instead choose to use file logging (for faster performance),
+ you may choose to use only a file logger and a tty logger.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDTTYLogger(cpy)sharedInstance"></a>
+                    <a name="//apple_ref/objc/Property/sharedInstance" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDTTYLogger(cpy)sharedInstance">sharedInstance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Singleton method</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">atomic</span><span class="p">,</span> <span class="n">class</span><span class="p">)</span> <span class="n">DDTTYLogger</span> <span class="o">*</span><span class="n">sharedInstance</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">sharedInstance</span><span class="p">:</span> <span class="kt">DDTTYLogger</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDTTYLogger.h#L65">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDTTYLogger(py)colorsEnabled"></a>
+                    <a name="//apple_ref/objc/Property/colorsEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDTTYLogger(py)colorsEnabled">colorsEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Want to use different colors for different log levels?
+ Enable this property.</p>
+
+<p>If you run the application via the Terminal (not Xcode),
+ the logger will map colors to xterm-256color or xterm-color (if available).</p>
+
+<p>Xcode does NOT natively support colors in the Xcode debugging console.
+ You&rsquo;ll need to install the XcodeColors plugin to see colors in the Xcode console.
+ <a href="https://github.com/robbiehanson/XcodeColors">https://github.com/robbiehanson/XcodeColors</a></p>
+
+<p>The default value is NO.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">colorsEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">colorsEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDTTYLogger.h#L97">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDTTYLogger(py)automaticallyAppendNewlineForCustomFormatters"></a>
+                    <a name="//apple_ref/objc/Property/automaticallyAppendNewlineForCustomFormatters" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDTTYLogger(py)automaticallyAppendNewlineForCustomFormatters">automaticallyAppendNewlineForCustomFormatters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When using a custom formatter you can set the <code>logMessage</code> method not to append
+ <code>\n</code> character after each output. This allows for some greater flexibility with
+ custom formatters. Default value is YES.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n">BOOL</span> <span class="n">automaticallyAppendNewlineForCustomFormatters</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">automaticallyAppendNewlineForCustomFormatters</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDTTYLogger.h#L104">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDTTYLogger(im)setForegroundColor:backgroundColor:forFlag:"></a>
+                    <a name="//apple_ref/objc/Method/-setForegroundColor:backgroundColor:forFlag:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDTTYLogger(im)setForegroundColor:backgroundColor:forFlag:">-setForegroundColor:backgroundColor:forFlag:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default color set (foregroundColor, backgroundColor) is:</p>
+
+<ul>
+<li>DDLogFlagError   = (red, nil)</li>
+<li>DDLogFlagWarning = (orange, nil)</li>
+</ul>
+
+<p>You can customize the colors however you see fit.
+ Please note that you are passing a flag, NOT a level.</p>
+
+<p>GOOD : [ttyLogger setForegroundColor:pink backgroundColor:nil forFlag:DDLogFlagInfo];  // &lt;- Good :)
+  BAD : [ttyLogger setForegroundColor:pink backgroundColor:nil forFlag:DDLogLevelInfo]; // &lt;- BAD! :(</p>
+
+<p>DDLogFlagInfo  = 0&hellip;00100
+ DDLogLevelInfo = 0&hellip;00111 &lt;- Would match DDLogFlagInfo and DDLogFlagWarning and DDLogFlagError</p>
+
+<p>If you run the application within Xcode, then the XcodeColors plugin is required.</p>
+
+<p>If you run the application from a shell, then DDTTYLogger will automatically map the given color to
+ the closest available color. (xterm-256color or xterm-color which have 256 and 16 supported colors respectively.)</p>
+
+<p>This method invokes setForegroundColor:backgroundColor:forFlag:context: and applies it to <code>LOG_CONTEXT_ALL</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setForegroundColor</span><span class="p">:(</span><span class="n"><a href="../Type Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">txtColor</span>
+           <span class="nf">backgroundColor</span><span class="p">:(</span><span class="n"><a href="../Type Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">bgColor</span>
+                   <span class="nf">forFlag</span><span class="p">:(</span><span class="n"><a href="../Enums/DDLogFlag.html">DDLogFlag</a></span><span class="p">)</span><span class="nv">mask</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setForegroundColor</span><span class="p">(</span><span class="n">_</span> <span class="nv">txtColor</span><span class="p">:</span> <span class="kt">NSColor</span><span class="o">!</span><span class="p">,</span> <span class="n">backgroundColor</span> <span class="nv">bgColor</span><span class="p">:</span> <span class="kt">NSColor</span><span class="o">!</span><span class="p">,</span> <span class="k">for</span> <span class="nv">mask</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDLogFlag.html">DDLogFlag</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDTTYLogger.h#L128">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDTTYLogger(im)setForegroundColor:backgroundColor:forFlag:context:"></a>
+                    <a name="//apple_ref/objc/Method/-setForegroundColor:backgroundColor:forFlag:context:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDTTYLogger(im)setForegroundColor:backgroundColor:forFlag:context:">-setForegroundColor:backgroundColor:forFlag:context:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Just like setForegroundColor:backgroundColor:flag, but allows you to specify a particular logging context.</p>
+
+<p>A logging context is often used to identify log messages coming from a 3rd party framework,
+ although logging context&rsquo;s can be used for many different functions.</p>
+
+<p>Use LOG_CONTEXT_ALL to set the deafult color for all contexts that have no specific color set defined.</p>
+
+<p>Logging context&rsquo;s are explained in further detail here:
+ Documentation/CustomContext.md</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setForegroundColor</span><span class="p">:(</span><span class="n"><a href="../Type Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">txtColor</span>
+           <span class="nf">backgroundColor</span><span class="p">:(</span><span class="n"><a href="../Type Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">bgColor</span>
+                   <span class="nf">forFlag</span><span class="p">:(</span><span class="n"><a href="../Enums/DDLogFlag.html">DDLogFlag</a></span><span class="p">)</span><span class="nv">mask</span>
+                   <span class="nf">context</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">ctxt</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setForegroundColor</span><span class="p">(</span><span class="n">_</span> <span class="nv">txtColor</span><span class="p">:</span> <span class="kt">NSColor</span><span class="o">!</span><span class="p">,</span> <span class="n">backgroundColor</span> <span class="nv">bgColor</span><span class="p">:</span> <span class="kt">NSColor</span><span class="o">!</span><span class="p">,</span> <span class="k">for</span> <span class="nv">mask</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDLogFlag.html">DDLogFlag</a></span><span class="p">,</span> <span class="n">context</span> <span class="nv">ctxt</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDTTYLogger.h#L141">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDTTYLogger(im)setForegroundColor:backgroundColor:forTag:"></a>
+                    <a name="//apple_ref/objc/Method/-setForegroundColor:backgroundColor:forTag:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDTTYLogger(im)setForegroundColor:backgroundColor:forTag:">-setForegroundColor:backgroundColor:forTag:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Similar to the methods above, but allows you to map DDLogMessage-&gt;tag to a particular color profile.
+ For example, you could do something like this:</p>
+
+<p>static NSString *const PurpleTag = @<q>PurpleTag</q>;</p>
+
+<p>#define DDLogPurple(frmt, &hellip;) LOG_OBJC_TAG_MACRO(NO, 0, 0, 0, PurpleTag, frmt, ##<strong>VA_ARGS</strong>)</p>
+
+<p>And then where you configure CocoaLumberjack:</p>
+
+<p>purple = DDMakeColor((64/255.0), (0/255.0), (128/255.0));</p>
+
+<p>or any UIColor/NSColor constructor.</p>
+
+<p>Note: For CLI OS X projects that don&rsquo;t link with AppKit use CLIColor objects instead</p>
+
+<p>[[DDTTYLogger sharedInstance] setForegroundColor:purple backgroundColor:nil forTag:PurpleTag];
+ [DDLog addLogger:[DDTTYLogger sharedInstance]];</p>
+
+<p>This would essentially give you a straight NSLog replacement that prints in purple:</p>
+
+<p>DDLogPurple(@<q>I&rsquo;m a purple log message!</q>);</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setForegroundColor</span><span class="p">:(</span><span class="n"><a href="../Type Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">txtColor</span>
+           <span class="nf">backgroundColor</span><span class="p">:(</span><span class="n"><a href="../Type Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">bgColor</span>
+                    <span class="nf">forTag</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n">NSCopying</span><span class="o">&gt;</span><span class="p">)</span><span class="nv">tag</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setForegroundColor</span><span class="p">(</span><span class="n">_</span> <span class="nv">txtColor</span><span class="p">:</span> <span class="kt">NSColor</span><span class="o">!</span><span class="p">,</span> <span class="n">backgroundColor</span> <span class="nv">bgColor</span><span class="p">:</span> <span class="kt">NSColor</span><span class="o">!</span><span class="p">,</span> <span class="n">forTag</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">NSCopying</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDTTYLogger.h#L166">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDTTYLogger(im)clearColorsForFlag:"></a>
+                    <a name="//apple_ref/objc/Method/-clearColorsForFlag:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDTTYLogger(im)clearColorsForFlag:">-clearColorsForFlag:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Clearing color profiles.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">clearColorsForFlag</span><span class="p">:(</span><span class="n"><a href="../Enums/DDLogFlag.html">DDLogFlag</a></span><span class="p">)</span><span class="nv">mask</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">clearColors</span><span class="p">(</span><span class="k">for</span> <span class="nv">mask</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDLogFlag.html">DDLogFlag</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDTTYLogger.h#L171">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDTTYLogger(im)clearColorsForFlag:context:"></a>
+                    <a name="//apple_ref/objc/Method/-clearColorsForFlag:context:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDTTYLogger(im)clearColorsForFlag:context:">-clearColorsForFlag:context:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">clearColorsForFlag</span><span class="p">:(</span><span class="n"><a href="../Enums/DDLogFlag.html">DDLogFlag</a></span><span class="p">)</span><span class="nv">mask</span> <span class="nf">context</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">context</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">clearColors</span><span class="p">(</span><span class="k">for</span> <span class="nv">mask</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDLogFlag.html">DDLogFlag</a></span><span class="p">,</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDTTYLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDTTYLogger(im)clearColorsForTag:"></a>
+                    <a name="//apple_ref/objc/Method/-clearColorsForTag:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDTTYLogger(im)clearColorsForTag:">-clearColorsForTag:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">clearColorsForTag</span><span class="p">:(</span><span class="n">id</span> <span class="o">&lt;</span><span class="n">NSCopying</span><span class="o">&gt;</span><span class="p">)</span><span class="nv">tag</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">clearColors</span><span class="p">(</span><span class="n">forTag</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">NSCopying</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDTTYLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDTTYLogger(im)clearColorsForAllFlags"></a>
+                    <a name="//apple_ref/objc/Method/-clearColorsForAllFlags" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDTTYLogger(im)clearColorsForAllFlags">-clearColorsForAllFlags</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">clearColorsForAllFlags</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">clearColorsForAllFlags</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDTTYLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDTTYLogger(im)clearColorsForAllTags"></a>
+                    <a name="//apple_ref/objc/Method/-clearColorsForAllTags" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDTTYLogger(im)clearColorsForAllTags">-clearColorsForAllTags</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">clearColorsForAllTags</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">clearColorsForAllTags</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDTTYLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDTTYLogger(im)clearAllColors"></a>
+                    <a name="//apple_ref/objc/Method/-clearAllColors" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDTTYLogger(im)clearAllColors">-clearAllColors</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">clearAllColors</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">clearAllColors</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1/Classes/DDTTYLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2018-09-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
