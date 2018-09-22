@@ -1,6 +1,7 @@
 # CocoaLumberjack documentation
-CocoaLumberjack Documentation https://CocoaLumberjack.github.io
-This repository hosts the in source documentation for [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack). You can view this at [CocoaLumberjack.github.io](https://CocoaLumberjack.github.io).
+CocoaLumberjack Documentation https://cocoaLumberjack.github.io
+
+This repository hosts the in source documentation for [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack). You can view this at [cocoaLumberjack.github.io](https://cocoaLumberjack.github.io).
 
 ## Maintenance
 
