@@ -16,15 +16,16 @@ The documentation is auto-generated using [Jazzy](https://github.com/realm/jazzy
 #### Generate the CocoaLumberjack documentation
 
 ```
-jazzy -o ../cocoaLumberjack.github.io \
+jazzy \        
   --objc \
   --author CocoaLumberjack \
   --github_url https://github.com/CocoaLumberjack/CocoaLumberjack \
-  --github-file-prefix https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.2 \
-  --module-version 3.4.2 \
-  --umbrella-header Classes/CocoaLumberjack.h \
+  --github-file-prefix https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.1 \
+  --module-version 3.4.1 \
+  --umbrella-header Classes/CocoaLumberjack.h \  
   --framework-root . \
-  --module CocoaLumberjack  
+  --module CocoaLumberjack \
+  -o ../CocoaLumberjack/github.io
 ```
 
-(assuming CocoaLumberjack and cocoaLumberjack.github.io live in the same folder)
+(assuming CocoaLumberjack and CocoaLumberjack.github.io live in the same folder)
