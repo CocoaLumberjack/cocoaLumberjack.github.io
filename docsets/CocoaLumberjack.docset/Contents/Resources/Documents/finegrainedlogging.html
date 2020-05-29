@@ -13,7 +13,7 @@
     <a title="FineGrainedLogging  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">CocoaLumberjack Docs</a> (66% documented)</p>
+        <p><a href="index.html">CocoaLumberjack 3.6.1 Docs</a> (64% documented)</p>
         <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -38,6 +38,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="architecture.html">Architecture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="combineloggers.html">CombineLoggers</a>
               </li>
               <li class="nav-group-task">
                 <a href="customcontext.html">CustomContext</a>
@@ -93,13 +96,31 @@
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Classes/CLIColor.html">CLIColor</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/DDASLLogCapture.html">DDASLLogCapture</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/DDASLLogger.html">DDASLLogger</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/DDAbstractDatabaseLogger.html">DDAbstractDatabaseLogger</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/DDAbstractLogger.html">DDAbstractLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)DDAtomicCounter">DDAtomicCounter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDContextBlacklistFilterLogFormatter.html">DDContextBlacklistFilterLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDContextWhitelistFilterLogFormatter.html">DDContextWhitelistFilterLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDDispatchQueueLogFormatter.html">DDDispatchQueueLogFormatter</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/DDFileLogger.html">DDFileLogger</a>
@@ -123,6 +144,9 @@
                 <a href="Classes/DDLoggerInformation.html">DDLoggerInformation</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/DDMultiFormatter.html">DDMultiFormatter</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/DDOSLogger.html">DDOSLogger</a>
               </li>
               <li class="nav-group-task">
@@ -133,6 +157,42 @@
           <li class="nav-group-name">
             <a href="Constants.html">Constants</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@CocoaLumberjackVersionNumber">CocoaLumberjackVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@CocoaLumberjackVersionString">CocoaLumberjackVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDLoggerNameASL">DDLoggerNameASL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDLoggerNameFile">DDLoggerNameFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDLoggerNameOS">DDLoggerNameOS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDLoggerNameTTY">DDLoggerNameTTY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceBackground">DDQualityOfServiceBackground</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceDefault">DDQualityOfServiceDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceUnspecified">DDQualityOfServiceUnspecified</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceUserInitiated">DDQualityOfServiceUserInitiated</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceUserInteractive">DDQualityOfServiceUserInteractive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceUtility">DDQualityOfServiceUtility</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Constants.html#/c:@kDDASLDDLogValue">kDDASLDDLogValue</a>
               </li>
@@ -157,6 +217,9 @@
             <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Enums/DDDispatchQueueLogFormatterMode.html">DDDispatchQueueLogFormatterMode</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/DDLogFlag.html">DDLogFlag</a>
               </li>
               <li class="nav-group-task">
@@ -170,6 +233,9 @@
           <li class="nav-group-name">
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/DDAtomicCountable.html">DDAtomicCountable</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Protocols/DDLogFileManager.html">DDLogFileManager</a>
               </li>
@@ -185,10 +251,16 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Type Definitions.html">Type Definitions</a>
+            <a href="Type%20Definitions.html">Type Definitions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Type Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a>
+                <a href="Type%20Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:DDLoggerNames.h@T@DDLoggerName">DDLoggerName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:DDDispatchQueueLogFormatter.h@T@DDQualityOfServiceName">DDQualityOfServiceName</a>
               </li>
             </ul>
           </li>
@@ -224,42 +296,42 @@
 <h3 id='details' class='heading'>Details</h3>
 
 <p>If you look closely at the definitions in the <code>DDLogLegacyMacros</code> header file, you&rsquo;ll notice something interesting:</p>
-<pre class="highlight plaintext"><code>#define LOG_FLAG_ERROR    (1 &lt;&lt; 0)  // 0...00001
+<pre class="highlight objective_c"><code><span class="cp">#define LOG_FLAG_ERROR    (1 &lt;&lt; 0)  // 0...00001
 #define LOG_FLAG_WARN     (1 &lt;&lt; 1)  // 0...00010
 #define LOG_FLAG_INFO     (1 &lt;&lt; 2)  // 0...00100
 #define LOG_FLAG_DEBUG    (1 &lt;&lt; 3)  // 0...01000
 #define LOG_FLAG_VERBOSE  (1 &lt;&lt; 4)  // 0...10000
-
-#define LOG_ERROR   (ddLogLevel &amp; LOG_FLAG_ERROR) // Bitwise AND
-</code></pre>
+</span>
+<span class="cp">#define LOG_ERROR   (ddLogLevel &amp; LOG_FLAG_ERROR) // Bitwise AND
+</span></code></pre>
 
 <p>Lumberjack is actually using a bitmask! And it is only using 5 bits. This means that every other bit is <strong>reserved for you</strong>.</p>
 
 <p>The Lumberjack framework actually comes with a sample Xcode project that demonstrates fine-grained logging. The demo project is based upon example #2 above. Here is how it works:</p>
 
-<p>Imagine you have a series of related timers. The calculation of these timers is complicated, and are thus spread across multiple files. However, they are related. In our example we have two different categories of timers. One for <q>food</q> and another for <q>sleep</q>.</p>
+<p>Imagine you have a series of related timers. The calculation of these timers is complicated, and are thus spread across multiple files. However, they are related. In our example we have two different categories of timers. One for &ldquo;food&rdquo; and another for &ldquo;sleep&rdquo;.</p>
 
 <p>So we want all of our logging related to our food timers to be grouped together. This way it can be enabled/disabled independently of the rest of the logging within the various files. And we want the same solution applied to our sleep timers as well.</p>
 
-<p>So we create our own logging header file to be used by our application. We&rsquo;ll call it <q>MYLog.h</q>:</p>
-<pre class="highlight plaintext"><code>#import "DDLog.h"
+<p>So we create our own logging header file to be used by our application. We&rsquo;ll call it &ldquo;MYLog.h&rdquo;:</p>
+<pre class="highlight objective_c"><code><span class="cp">#import "DDLog.h"
+</span>
+<span class="c1">// The first 5 bits are being used by the standard levels (0 - 4) </span>
+<span class="c1">// All other bits are fair game for us to use.</span>
 
-// The first 5 bits are being used by the standard levels (0 - 4) 
-// All other bits are fair game for us to use.
-
-#define LOG_FLAG_FOOD_TIMER    (1 &lt;&lt; 5)  // 0...0100000
+<span class="cp">#define LOG_FLAG_FOOD_TIMER    (1 &lt;&lt; 5)  // 0...0100000
 #define LOG_FLAG_SLEEP_TIMER   (1 &lt;&lt; 6)  // 0...1000000
-
-#define LOG_FOOD_TIMER  (ddLogLevel &amp; LOG_FLAG_FOOD_TIMER)
+</span>
+<span class="cp">#define LOG_FOOD_TIMER  (ddLogLevel &amp; LOG_FLAG_FOOD_TIMER)
 #define LOG_SLEEP_TIMER (ddLogLevel &amp; LOG_FLAG_SLEEP_TIMER)
-
-#define DDLogFoodTimer(frmt, ...)   ASYNC_LOG_OBJC_MAYBE(ddLogLevel, LOG_FLAG_FOOD_TIMER,  0, frmt, ##__VA_ARGS__)
+</span>
+<span class="cp">#define DDLogFoodTimer(frmt, ...)   ASYNC_LOG_OBJC_MAYBE(ddLogLevel, LOG_FLAG_FOOD_TIMER,  0, frmt, ##__VA_ARGS__)
 #define DDLogSleepTimer(frmt, ...)  ASYNC_LOG_OBJC_MAYBE(ddLogLevel, LOG_FLAG_SLEEP_TIMER, 0, frmt, ##__VA_ARGS__)
+</span>
+<span class="c1">// Now we decide which flags we want to enable in our application</span>
 
-// Now we decide which flags we want to enable in our application
-
-#define LOG_FLAG_TIMERS (LOG_FLAG_FOOD_TIMER | LOG_FLAG_SLEEP_TIMER))
-</code></pre>
+<span class="cp">#define LOG_FLAG_TIMERS (LOG_FLAG_FOOD_TIMER | LOG_FLAG_SLEEP_TIMER))
+</span></code></pre>
 
 <p>Now we have two new macros that can be used in our application.</p>
 
@@ -271,13 +343,13 @@
 <p>We also defined LOG_FLAG_TIMERS which can be used to enable both loggers. LOG_FLAG_FOOD_TIMER | LOG_FLAG_SLEEP_TIMER = 0100000 | 1000000 = 1100000</p>
 
 <p>Then in our source code files we just make sure that our ddLogLevel bitmask has the flags set to enable logging for our timers:</p>
-<pre class="highlight plaintext"><code>#import "MYLog.h"
+<pre class="highlight objective_c"><code><span class="cp">#import "MYLog.h"
+</span>
+<span class="k">static</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">ddLogLevel</span> <span class="o">=</span> <span class="n">LOG_LEVEL_WARN</span> <span class="o">|</span> <span class="n">LOG_FLAG_TIMERS</span><span class="p">;</span>
 
-static const int ddLogLevel = LOG_LEVEL_WARN | LOG_FLAG_TIMERS;
+<span class="p">...</span>
 
-...
-
-DDLogFoodTimer(@"TimerTwo: Hungry - Need Food");
+<span class="n">DDLogFoodTimer</span><span class="p">(</span><span class="s">@"TimerTwo: Hungry - Need Food"</span><span class="p">);</span>
 </code></pre>
 <h3 id='how-many-fine-grained-options-are-available' class='heading'>How many fine-grained options are available?</h3>
 
@@ -288,25 +360,59 @@ DDLogFoodTimer(@"TimerTwo: Hungry - Need Food");
 <p>But if that isn&rsquo;t enough, you could change it to be a 64-bit value, or you could simply add another variable. The macros have been designed to make it easy for you to plug in your own custom stuff.</p>
 
 <p>For example, let&rsquo;s say you wanted to have 30 fine-grained log options. No problem. Just do something like this.</p>
-<pre class="highlight plaintext"><code>#define LOG_FLAG_CAT   (1 &lt;&lt; 0)  // 0...00001
+<pre class="highlight objective_c"><code><span class="cp">#define LOG_FLAG_CAT   (1 &lt;&lt; 0)  // 0...00001
 #define LOG_FLAG_DOG   (1 &lt;&lt; 1)  // 0...00010
-
-#define LOG_CAT  (ddLogLevel2 &amp; LOG_FLAG_CAT)
+</span>
+<span class="cp">#define LOG_CAT  (ddLogLevel2 &amp; LOG_FLAG_CAT)
 #define LOG_DOG  (ddLogLevel2 &amp; LOG_FLAG_DOG)
-
-#define DDLogCat(frmt, ...)  ASYNC_LOG_OBJC_MAYBE(ddLogLevel2, LOG_FLAG_CAT, 0, frmt, ##__VA_ARGS__)
+</span>
+<span class="cp">#define DDLogCat(frmt, ...)  ASYNC_LOG_OBJC_MAYBE(ddLogLevel2, LOG_FLAG_CAT, 0, frmt, ##__VA_ARGS__)
 #define DDLogDog(frmt, ...)  ASYNC_LOG_OBJC_MAYBE(ddLogLevel2, LOG_FLAG_DOG, 0, frmt, ##__VA_ARGS__)
-</code></pre>
+</span></code></pre>
 
 <p>All we had to do was use a new variable - ddLogLevel2.</p>
 
 <p>You should also note that you aren&rsquo;t restricted to the 4 pre-defined log levels. You can define them however you want. Learn more in the <a href="CustomLogLevels.md">Custom Log Levels</a> page.</p>
+<h3 id='swift-equivalent' class='heading'>Swift equivalent</h3>
+
+<p>Thanks to @omerlh, we have a Swift equivalent for this feature.</p>
+
+<ol>
+<li>Create another enum</li>
+</ol>
+<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CustomLogFlags</span> <span class="p">:</span> <span class="kt">UInt</span><span class="p">{</span>
+    <span class="k">case</span> <span class="n">test</span> <span class="o">=</span> <span class="mb">0b0100000</span>
+<span class="p">}</span>
+</code></pre>
+
+<ol>
+<li>Then set the log level</li>
+</ol>
+<pre class="highlight swift"><code><span class="kt">DDLog</span><span class="o">.</span><span class="n">logLevel</span> <span class="o">=</span> <span class="kt">DDLogLevel</span><span class="p">(</span><span class="nv">rawValue</span><span class="p">:</span> <span class="kt">DDLogLevel</span><span class="o">.</span><span class="n">error</span><span class="o">.</span><span class="n">rawValue</span> <span class="o">|</span> <span class="kt">CustomLogFlags</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">rawValue</span><span class="p">)</span> <span class="p">??</span> <span class="kt">DDLogLevel</span><span class="o">.</span><span class="n">error</span>
+</code></pre>
+
+<ol>
+<li>Now you can log messages using the new log level:</li>
+</ol>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">logLevel</span> <span class="o">=</span> <span class="kt">DDLogFlag</span><span class="p">(</span><span class="nv">rawValue</span><span class="p">:</span> <span class="kt">CustomLogFlags</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">rawValue</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">logMsg</span> <span class="o">=</span> <span class="kt">DDLogMessage</span><span class="p">(</span><span class="nv">message</span><span class="p">:</span> <span class="nf">message</span><span class="p">(),</span> <span class="nv">level</span><span class="p">:</span> <span class="n">logLevel</span><span class="p">,</span> <span class="nv">flag</span><span class="p">:</span> <span class="n">flag</span><span class="p">,</span> <span class="nv">context</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                          <span class="nv">file</span><span class="p">:</span> <span class="n">file</span><span class="p">,</span> <span class="nv">function</span><span class="p">:</span> <span class="n">function</span><span class="p">,</span> <span class="nv">line</span><span class="p">:</span> <span class="n">line</span><span class="p">,</span>
+                          <span class="nv">tag</span><span class="p">:</span> <span class="n">tag</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">DDLogMessageOptions</span><span class="p">(</span><span class="nv">rawValue</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">timestamp</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+<span class="kt">DDLog</span><span class="o">.</span><span class="nf">log</span><span class="p">(</span><span class="n">logAsync</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="n">logMsg</span><span class="p">)</span>
+</code></pre>
+
+<p>Details can be found:</p>
+
+<ul>
+<li><a href="https://stackoverflow.com/questions/44627804/fine-grained-logging-when-using-cocoalumberjack-in-swift/44692158#44692158">https://stackoverflow.com/questions/44627804/fine-grained-logging-when-using-cocoalumberjack-in-swift/44692158#44692158</a></li>
+<li><a href="https://github.com/CocoaLumberjack/CocoaLumberjack/issues/876">https://github.com/CocoaLumberjack/CocoaLumberjack/issues/876</a></li>
+</ul>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2018-09-22)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-05-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

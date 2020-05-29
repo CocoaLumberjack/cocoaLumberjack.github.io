@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CombineLoggers  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="CombineLoggers  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">CocoaLumberjack 3.6.1 Docs</a> (64% documented)</p>
+        <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">CocoaLumberjack Reference</a>
+        <img id="carat" src="img/carat.png" />
+        CombineLoggers  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="arc.html">ARC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="appcode-support.html">AppCode-support</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="architecture.html">Architecture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="combineloggers.html">CombineLoggers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="customcontext.html">CustomContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="customformatters.html">CustomFormatters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="customloglevels.html">CustomLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="customloggers.html">CustomLoggers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="dynamicloglevels.html">DynamicLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="finegrainedlogging.html">FineGrainedLogging</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="gettingstarted.html">GettingStarted</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="logfilemanagement.html">LogFileManagement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="perloggerloglevels.html">PerLoggerLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="peruserloglevels.html">PerUserLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="performance.html">Performance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="problemsolution.html">ProblemSolution</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="readme.html">README</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="xcodecolors.html">XcodeColors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="xcodetricks.html">XcodeTricks</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/CLIColor.html">CLIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDASLLogCapture.html">DDASLLogCapture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDASLLogger.html">DDASLLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDAbstractDatabaseLogger.html">DDAbstractDatabaseLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDAbstractLogger.html">DDAbstractLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)DDAtomicCounter">DDAtomicCounter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDContextBlacklistFilterLogFormatter.html">DDContextBlacklistFilterLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDContextWhitelistFilterLogFormatter.html">DDContextWhitelistFilterLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDDispatchQueueLogFormatter.html">DDDispatchQueueLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDFileLogger.html">DDFileLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDLog.html">DDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDLogFileFormatterDefault.html">DDLogFileFormatterDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDLogFileInfo.html">DDLogFileInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDLogFileManagerDefault.html">DDLogFileManagerDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDLogMessage.html">DDLogMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDLoggerInformation.html">DDLoggerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDMultiFormatter.html">DDMultiFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDOSLogger.html">DDOSLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDTTYLogger.html">DDTTYLogger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@CocoaLumberjackVersionNumber">CocoaLumberjackVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@CocoaLumberjackVersionString">CocoaLumberjackVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDLoggerNameASL">DDLoggerNameASL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDLoggerNameFile">DDLoggerNameFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDLoggerNameOS">DDLoggerNameOS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDLoggerNameTTY">DDLoggerNameTTY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceBackground">DDQualityOfServiceBackground</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceDefault">DDQualityOfServiceDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceUnspecified">DDQualityOfServiceUnspecified</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceUserInitiated">DDQualityOfServiceUserInitiated</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceUserInteractive">DDQualityOfServiceUserInteractive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceUtility">DDQualityOfServiceUtility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@kDDASLDDLogValue">kDDASLDDLogValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@kDDASLKeyDDLog">kDDASLKeyDDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@kDDDefaultLogFilesDiskQuota">kDDDefaultLogFilesDiskQuota</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@kDDDefaultLogMaxFileSize">kDDDefaultLogMaxFileSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@kDDDefaultLogMaxNumLogFiles">kDDDefaultLogMaxNumLogFiles</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@kDDDefaultLogRollingFrequency">kDDDefaultLogRollingFrequency</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/DDDispatchQueueLogFormatterMode.html">DDDispatchQueueLogFormatterMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/DDLogFlag.html">DDLogFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/DDLogLevel.html">DDLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/DDLogMessageOptions.html">DDLogMessageOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/DDAtomicCountable.html">DDAtomicCountable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/DDLogFileManager.html">DDLogFileManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/DDLogFormatter.html">DDLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/DDLogger.html">DDLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/DDRegisteredDynamicLogging.html">DDRegisteredDynamicLogging</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:DDLoggerNames.h@T@DDLoggerName">DDLoggerName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:DDDispatchQueueLogFormatter.h@T@DDQualityOfServiceName">DDQualityOfServiceName</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@DDExtractFileNameWithoutExtension">DDExtractFileNameWithoutExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:DDTTYLogger.h@F@DDMakeColor">DDMakeColor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p>How to write your own custom logger using Combine.</p>
+<h3 id='introduction' class='heading'>Introduction</h3>
+
+<p>Loggers allow you to direct log messages wherever you want. <code>DDLog.messagePublisher()</code> wraps the API with a Combine publisher. Allowing you to use common Operators to transform these messages to your needs.</p>
+
+<p>For general information about loggers, see the <a href="Architecture.md">architecture</a> page.</p>
+<h3 id='publisher' class='heading'>Publisher</h3>
+
+<p><code>DDLog.messagePublisher()</code> returns <code>MessagePublisher</code>, which will never stop sending <code><a href="Classes/DDLogMessage.html">DDLogMessage</a></code>s while there is an active subscriber and doesn&rsquo;t emit errors. Note that it&rsquo;ll create a <code><a href="Protocols/DDLogger.html">DDLogger</a></code> for each subscription unless you use the <code>share()</code> operator.</p>
+<h3 id='example' class='heading'>Example</h3>
+
+<p>Here is an example of how you could use it display the last 1000 message in a log viewer.</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">messages</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">]()</span>
+
+<span class="kd">private</span> <span class="k">var</span> <span class="nv">subscriptions</span> <span class="o">=</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">AnyCancellable</span><span class="o">&gt;</span><span class="p">()</span>
+
+<span class="kd">func</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">DDLog</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="nf">messagePublisher</span><span class="p">()</span> <span class="c1">//messagePublisher emits `DDLogMessage`</span>
+        <span class="o">.</span><span class="nf">map</span><span class="p">(\</span><span class="o">.</span><span class="n">message</span><span class="p">)</span> <span class="c1">//Emits `String`. You could do the formating here if you wanted.</span>
+        <span class="o">.</span><span class="nf">scan</span><span class="p">([],</span> <span class="p">{</span> <span class="p">(</span><span class="n">messages</span><span class="p">,</span> <span class="n">newMessage</span><span class="p">)</span> <span class="k">in</span>
+            <span class="k">var</span> <span class="nv">messages</span> <span class="o">=</span> <span class="n">messages</span>
+            <span class="n">messages</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="n">newMessage</span><span class="p">,</span> <span class="nv">at</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kt">Array</span><span class="p">(</span><span class="n">messages</span><span class="o">.</span><span class="nf">prefix</span><span class="p">(</span><span class="mi">1000</span><span class="p">))</span>
+        <span class="p">})</span> <span class="c1">//Emits `[String]`. Up to 1000 messages, most recent message is first.</span>
+        <span class="o">.</span><span class="nf">receive</span><span class="p">(</span><span class="nv">on</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="o">.</span><span class="n">main</span><span class="p">)</span> <span class="c1">//Emits `[String]` on Main Queue</span>
+        <span class="o">.</span><span class="nf">sink</span><span class="p">(</span><span class="nv">receiveValue</span><span class="p">:</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="k">self</span><span class="p">?</span><span class="o">.</span><span class="n">messages</span> <span class="o">=</span> <span class="nv">$0</span> <span class="p">})</span> <span class="c1">//Sets `[String]` to local storage avoiding retain cycle.</span>
+        <span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="nv">in</span><span class="p">:</span> <span class="o">&amp;</span><span class="n">subscriptions</span><span class="p">)</span> <span class="c1">//stores the subscription or it'll stop emitting events right away</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>You could add different operators to write the messages to disk, or to forward the messages to another API. </p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-05-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

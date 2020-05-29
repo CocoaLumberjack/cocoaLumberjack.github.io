@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DDAbstractDatabaseLogger Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/DDAbstractDatabaseLogger" class="dashAnchor"></a>
+    <a title="DDAbstractDatabaseLogger Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CocoaLumberjack 3.6.1 Docs</a> (64% documented)</p>
+        <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CocoaLumberjack Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DDAbstractDatabaseLogger Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../arc.html">ARC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../appcode-support.html">AppCode-support</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../architecture.html">Architecture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../combineloggers.html">CombineLoggers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../customcontext.html">CustomContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../customformatters.html">CustomFormatters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../customloglevels.html">CustomLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../customloggers.html">CustomLoggers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../dynamicloglevels.html">DynamicLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../faq.html">FAQ</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../finegrainedlogging.html">FineGrainedLogging</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../gettingstarted.html">GettingStarted</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../logfilemanagement.html">LogFileManagement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../perloggerloglevels.html">PerLoggerLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../peruserloglevels.html">PerUserLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../performance.html">Performance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../problemsolution.html">ProblemSolution</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../readme.html">README</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../xcodecolors.html">XcodeColors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../xcodetricks.html">XcodeTricks</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CLIColor.html">CLIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDASLLogCapture.html">DDASLLogCapture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDASLLogger.html">DDASLLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDAbstractDatabaseLogger.html">DDAbstractDatabaseLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDAbstractLogger.html">DDAbstractLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)DDAtomicCounter">DDAtomicCounter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDContextBlacklistFilterLogFormatter.html">DDContextBlacklistFilterLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDContextWhitelistFilterLogFormatter.html">DDContextWhitelistFilterLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDDispatchQueueLogFormatter.html">DDDispatchQueueLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDFileLogger.html">DDFileLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLog.html">DDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileFormatterDefault.html">DDLogFileFormatterDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileInfo.html">DDLogFileInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileManagerDefault.html">DDLogFileManagerDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogMessage.html">DDLogMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLoggerInformation.html">DDLoggerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDMultiFormatter.html">DDMultiFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDOSLogger.html">DDOSLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDTTYLogger.html">DDTTYLogger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CocoaLumberjackVersionNumber">CocoaLumberjackVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CocoaLumberjackVersionString">CocoaLumberjackVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDLoggerNameASL">DDLoggerNameASL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDLoggerNameFile">DDLoggerNameFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDLoggerNameOS">DDLoggerNameOS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDLoggerNameTTY">DDLoggerNameTTY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDQualityOfServiceBackground">DDQualityOfServiceBackground</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDQualityOfServiceDefault">DDQualityOfServiceDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDQualityOfServiceUnspecified">DDQualityOfServiceUnspecified</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDQualityOfServiceUserInitiated">DDQualityOfServiceUserInitiated</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDQualityOfServiceUserInteractive">DDQualityOfServiceUserInteractive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDQualityOfServiceUtility">DDQualityOfServiceUtility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDASLDDLogValue">kDDASLDDLogValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDASLKeyDDLog">kDDASLKeyDDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogFilesDiskQuota">kDDDefaultLogFilesDiskQuota</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogMaxFileSize">kDDDefaultLogMaxFileSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogMaxNumLogFiles">kDDDefaultLogMaxNumLogFiles</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogRollingFrequency">kDDDefaultLogRollingFrequency</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DDDispatchQueueLogFormatterMode.html">DDDispatchQueueLogFormatterMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogFlag.html">DDLogFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogLevel.html">DDLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogMessageOptions.html">DDLogMessageOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DDAtomicCountable.html">DDAtomicCountable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogFileManager.html">DDLogFileManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogFormatter.html">DDLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogger.html">DDLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDRegisteredDynamicLogging.html">DDRegisteredDynamicLogging</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:DDLoggerNames.h@T@DDLoggerName">DDLoggerName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:DDDispatchQueueLogFormatter.h@T@DDQualityOfServiceName">DDQualityOfServiceName</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@DDExtractFileNameWithoutExtension">DDExtractFileNameWithoutExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:DDTTYLogger.h@F@DDMakeColor">DDMakeColor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DDAbstractDatabaseLogger</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">DDAbstractDatabaseLogger</span> <span class="p">:</span> <span class="nc"><a href="../Classes/DDAbstractLogger.html">DDAbstractLogger</a></span> <span class="p">{</span>
+  <span class="n">NSUInteger</span> <span class="n">_saveThreshold</span><span class="p">;</span>
+  <span class="n">NSTimeInterval</span> <span class="n">_saveInterval</span><span class="p">;</span>
+  <span class="n">NSTimeInterval</span> <span class="n">_maxAge</span><span class="p">;</span>
+  <span class="n">NSTimeInterval</span> <span class="n">_deleteInterval</span><span class="p">;</span>
+  <span class="n">BOOL</span> <span class="n">_deleteOnEverySave</span><span class="p">;</span>
+  <span class="n">NSInteger</span> <span class="n">_saveTimerSuspended</span><span class="p">;</span>
+  <span class="n">NSUInteger</span> <span class="n">_unsavedCount</span><span class="p">;</span>
+  <span class="n">dispatch_time_t</span> <span class="n">_unsavedTime</span><span class="p">;</span>
+  <span class="n">dispatch_source_t</span> <span class="n">_saveTimer</span><span class="p">;</span>
+  <span class="n">dispatch_time_t</span> <span class="n">_lastDeleteTime</span><span class="p">;</span>
+  <span class="n">dispatch_source_t</span> <span class="n">_deleteTimer</span><span class="p">;</span>
+<span class="p">}</span></code></pre>
+
+                </div>
+              </div>
+            <p>This class provides an abstract implementation of a database logger.</p>
+
+<p>That is, it provides the base implementation for a database logger to build atop of.
+ All that is needed for a concrete database logger is to extend this class
+ and override the methods in the implementation file that are prefixed with &ldquo;db_&rdquo;.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger@_saveThreshold"></a>
+                    <a name="//apple_ref/objc/Ivar/_saveThreshold" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger@_saveThreshold">_saveThreshold</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSUInteger</span> <span class="n">_saveThreshold</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger@_saveInterval"></a>
+                    <a name="//apple_ref/objc/Ivar/_saveInterval" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger@_saveInterval">_saveInterval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSTimeInterval</span> <span class="n">_saveInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger@_maxAge"></a>
+                    <a name="//apple_ref/objc/Ivar/_maxAge" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger@_maxAge">_maxAge</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSTimeInterval</span> <span class="n">_maxAge</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger@_deleteInterval"></a>
+                    <a name="//apple_ref/objc/Ivar/_deleteInterval" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger@_deleteInterval">_deleteInterval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSTimeInterval</span> <span class="n">_deleteInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger@_deleteOnEverySave"></a>
+                    <a name="//apple_ref/objc/Ivar/_deleteOnEverySave" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger@_deleteOnEverySave">_deleteOnEverySave</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">BOOL</span> <span class="n">_deleteOnEverySave</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger@_saveTimerSuspended"></a>
+                    <a name="//apple_ref/objc/Ivar/_saveTimerSuspended" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger@_saveTimerSuspended">_saveTimerSuspended</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSInteger</span> <span class="n">_saveTimerSuspended</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger@_unsavedCount"></a>
+                    <a name="//apple_ref/objc/Ivar/_unsavedCount" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger@_unsavedCount">_unsavedCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">NSUInteger</span> <span class="n">_unsavedCount</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger@_unsavedTime"></a>
+                    <a name="//apple_ref/objc/Ivar/_unsavedTime" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger@_unsavedTime">_unsavedTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">dispatch_time_t</span> <span class="n">_unsavedTime</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger@_saveTimer"></a>
+                    <a name="//apple_ref/objc/Ivar/_saveTimer" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger@_saveTimer">_saveTimer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">dispatch_source_t</span> <span class="n">_saveTimer</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger@_lastDeleteTime"></a>
+                    <a name="//apple_ref/objc/Ivar/_lastDeleteTime" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger@_lastDeleteTime">_lastDeleteTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">dispatch_time_t</span> <span class="n">_lastDeleteTime</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger@_deleteTimer"></a>
+                    <a name="//apple_ref/objc/Ivar/_deleteTimer" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger@_deleteTimer">_deleteTimer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">dispatch_source_t</span> <span class="n">_deleteTimer</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger(py)saveThreshold"></a>
+                    <a name="//apple_ref/objc/Property/saveThreshold" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger(py)saveThreshold">saveThreshold</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies how often to save the data to disk.
+ Since saving is an expensive operation (disk io) it is not done after every log statement.
+ These properties allow you to configure how/when the logger saves to disk.</p>
+
+<p>A save is done when either (whichever happens first):</p>
+
+<ul>
+<li>The number of unsaved log entries reaches saveThreshold</li>
+<li>The amount of time since the oldest unsaved log entry was created reaches saveInterval</li>
+</ul>
+
+<p>You can optionally disable the saveThreshold by setting it to zero.
+ If you disable the saveThreshold you are entirely dependent on the saveInterval.</p>
+
+<p>You can optionally disable the saveInterval by setting it to zero (or a negative value).
+ If you disable the saveInterval you are entirely dependent on the saveThreshold.</p>
+
+<p>It&rsquo;s not wise to disable both saveThreshold and saveInterval.</p>
+
+<p>The default saveThreshold is 500.
+ The default saveInterval is 60 seconds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSUInteger</span> <span class="n">saveThreshold</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">saveThreshold</span><span class="p">:</span> <span class="kt">UInt</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L70">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger(py)saveInterval"></a>
+                    <a name="//apple_ref/objc/Property/saveInterval" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger(py)saveInterval">saveInterval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>See the description for the <code><a href="../Classes/DDAbstractDatabaseLogger.html#/c:objc(cs)DDAbstractDatabaseLogger(py)saveThreshold">saveThreshold</a></code> property</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSTimeInterval</span> <span class="n">saveInterval</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">saveInterval</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L75">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger(py)maxAge"></a>
+                    <a name="//apple_ref/objc/Property/maxAge" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger(py)maxAge">maxAge</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>It is likely you don&rsquo;t want the log entries to persist forever.
+ Doing so would allow the database to grow infinitely large over time.</p>
+
+<p>The maxAge property provides a way to specify how old a log statement can get
+ before it should get deleted from the database.</p>
+
+<p>The deleteInterval specifies how often to sweep for old log entries.
+ Since deleting is an expensive operation (disk io) is is done on a fixed interval.</p>
+
+<p>An alternative to the deleteInterval is the deleteOnEverySave option.
+ This specifies that old log entries should be deleted during every save operation.</p>
+
+<p>You can optionally disable the maxAge by setting it to zero (or a negative value).
+ If you disable the maxAge then old log statements are not deleted.</p>
+
+<p>You can optionally disable the deleteInterval by setting it to zero (or a negative value).</p>
+
+<p>If you disable both deleteInterval and deleteOnEverySave then old log statements are not deleted.</p>
+
+<p>It&rsquo;s not wise to enable both deleteInterval and deleteOnEverySave.</p>
+
+<p>The default maxAge is 7 days.
+ The default deleteInterval is 5 minutes.
+ The default deleteOnEverySave is NO.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSTimeInterval</span> <span class="n">maxAge</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">maxAge</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L103">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger(py)deleteInterval"></a>
+                    <a name="//apple_ref/objc/Property/deleteInterval" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger(py)deleteInterval">deleteInterval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>See the description for the <code><a href="../Classes/DDAbstractDatabaseLogger.html#/c:objc(cs)DDAbstractDatabaseLogger(py)maxAge">maxAge</a></code> property</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSTimeInterval</span> <span class="n">deleteInterval</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">deleteInterval</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L108">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger(py)deleteOnEverySave"></a>
+                    <a name="//apple_ref/objc/Property/deleteOnEverySave" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger(py)deleteOnEverySave">deleteOnEverySave</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>See the description for the <code><a href="../Classes/DDAbstractDatabaseLogger.html#/c:objc(cs)DDAbstractDatabaseLogger(py)maxAge">maxAge</a></code> property</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">BOOL</span> <span class="n">deleteOnEverySave</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">deleteOnEverySave</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L113">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger(im)savePendingLogEntries"></a>
+                    <a name="//apple_ref/objc/Method/-savePendingLogEntries" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger(im)savePendingLogEntries">-savePendingLogEntries</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Forces a save of any pending log entries (flushes log entries to disk).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">savePendingLogEntries</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">savePendingLogEntries</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L118">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDAbstractDatabaseLogger(im)deleteOldLogEntries"></a>
+                    <a name="//apple_ref/objc/Method/-deleteOldLogEntries" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDAbstractDatabaseLogger(im)deleteOldLogEntries">-deleteOldLogEntries</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes any log entries that are older than maxAge.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">deleteOldLogEntries</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteOldLogEntries</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L123">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-05-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

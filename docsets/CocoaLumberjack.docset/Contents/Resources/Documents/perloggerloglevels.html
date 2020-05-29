@@ -13,7 +13,7 @@
     <a title="PerLoggerLogLevels  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">CocoaLumberjack Docs</a> (66% documented)</p>
+        <p><a href="index.html">CocoaLumberjack 3.6.1 Docs</a> (64% documented)</p>
         <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -38,6 +38,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="architecture.html">Architecture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="combineloggers.html">CombineLoggers</a>
               </li>
               <li class="nav-group-task">
                 <a href="customcontext.html">CustomContext</a>
@@ -93,13 +96,31 @@
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Classes/CLIColor.html">CLIColor</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/DDASLLogCapture.html">DDASLLogCapture</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/DDASLLogger.html">DDASLLogger</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/DDAbstractDatabaseLogger.html">DDAbstractDatabaseLogger</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/DDAbstractLogger.html">DDAbstractLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)DDAtomicCounter">DDAtomicCounter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDContextBlacklistFilterLogFormatter.html">DDContextBlacklistFilterLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDContextWhitelistFilterLogFormatter.html">DDContextWhitelistFilterLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DDDispatchQueueLogFormatter.html">DDDispatchQueueLogFormatter</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/DDFileLogger.html">DDFileLogger</a>
@@ -123,6 +144,9 @@
                 <a href="Classes/DDLoggerInformation.html">DDLoggerInformation</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/DDMultiFormatter.html">DDMultiFormatter</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/DDOSLogger.html">DDOSLogger</a>
               </li>
               <li class="nav-group-task">
@@ -133,6 +157,42 @@
           <li class="nav-group-name">
             <a href="Constants.html">Constants</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@CocoaLumberjackVersionNumber">CocoaLumberjackVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@CocoaLumberjackVersionString">CocoaLumberjackVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDLoggerNameASL">DDLoggerNameASL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDLoggerNameFile">DDLoggerNameFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDLoggerNameOS">DDLoggerNameOS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDLoggerNameTTY">DDLoggerNameTTY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceBackground">DDQualityOfServiceBackground</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceDefault">DDQualityOfServiceDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceUnspecified">DDQualityOfServiceUnspecified</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceUserInitiated">DDQualityOfServiceUserInitiated</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceUserInteractive">DDQualityOfServiceUserInteractive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@DDQualityOfServiceUtility">DDQualityOfServiceUtility</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Constants.html#/c:@kDDASLDDLogValue">kDDASLDDLogValue</a>
               </li>
@@ -157,6 +217,9 @@
             <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Enums/DDDispatchQueueLogFormatterMode.html">DDDispatchQueueLogFormatterMode</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/DDLogFlag.html">DDLogFlag</a>
               </li>
               <li class="nav-group-task">
@@ -170,6 +233,9 @@
           <li class="nav-group-name">
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/DDAtomicCountable.html">DDAtomicCountable</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Protocols/DDLogFileManager.html">DDLogFileManager</a>
               </li>
@@ -185,10 +251,16 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Type Definitions.html">Type Definitions</a>
+            <a href="Type%20Definitions.html">Type Definitions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Type Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a>
+                <a href="Type%20Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:DDLoggerNames.h@T@DDLoggerName">DDLoggerName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:DDDispatchQueueLogFormatter.h@T@DDQualityOfServiceName">DDQualityOfServiceName</a>
               </li>
             </ul>
           </li>
@@ -213,12 +285,12 @@
 
 <p>If you need a different log level for every logger (i.e. if you have a custom logger like Crashlytics logger that should not log Info or Debug info), you can easily achieve this using the <code>DDLog.add(_, with:)</code> method in Swift, or <code>[DDLog addLogger:withLevel:]</code> method in Objective C.</p>
 <h4 id='swift' class='heading'>Swift</h4>
-<pre class="highlight swift"><code><span class="kt">DDLog</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="kt">DDASLLogger</span><span class="o">.</span><span class="n">sharedInstance</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="kt">DDLogLevel</span><span class="o">.</span><span class="n">info</span><span class="p">)</span>
-<span class="kt">DDLog</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="kt">DDTTYLogger</span><span class="o">.</span><span class="n">sharedInstance</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="kt">DDLogLevel</span><span class="o">.</span><span class="n">debug</span><span class="p">)</span>
+<pre class="highlight swift"><code><span class="kt">DDLog</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="kt">DDOSLogger</span><span class="o">.</span><span class="n">sharedInstance</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="kt">DDLogLevel</span><span class="o">.</span><span class="n">info</span><span class="p">)</span>
+<span class="kt">DDLog</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="kt">DDFileLogger</span><span class="o">.</span><span class="n">sharedInstance</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="kt">DDLogLevel</span><span class="o">.</span><span class="n">debug</span><span class="p">)</span>
 </code></pre>
 <h4 id='objective-c' class='heading'>Objective C</h4>
-<pre class="highlight plaintext"><code>[DDLog addLogger:[DDASLLogger sharedInstance] withLevel:DDLogLevelInfo];
-[DDLog addLogger:[DDTTYLogger sharedInstance] withLevel:DDLogLevelDebug];
+<pre class="highlight objective_c"><code><span class="p">[</span><span class="n">DDLog</span> <span class="nf">addLogger</span><span class="p">:[</span><span class="n">DDOSLogger</span> <span class="nf">sharedInstance</span><span class="p">]</span> <span class="nf">withLevel</span><span class="p">:</span><span class="n">DDLogLevelInfo</span><span class="p">];</span>
+<span class="p">[</span><span class="n">DDLog</span> <span class="nf">addLogger</span><span class="p">:[</span><span class="n">DDFileLogger</span> <span class="nf">sharedInstance</span><span class="p">]</span> <span class="nf">withLevel</span><span class="p">:</span><span class="n">DDLogLevelDebug</span><span class="p">];</span>
 </code></pre>
 
 <p>You can still use the old method <code>+addLogger:</code>, this one uses the <code>DDLogLevelVerbose</code> as default, so no log is excluded.</p>
@@ -228,8 +300,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2018-09-22)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-05-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

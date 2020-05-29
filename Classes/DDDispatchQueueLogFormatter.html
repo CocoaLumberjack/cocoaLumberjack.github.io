@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DDDispatchQueueLogFormatter Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/DDDispatchQueueLogFormatter" class="dashAnchor"></a>
+    <a title="DDDispatchQueueLogFormatter Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CocoaLumberjack 3.6.1 Docs</a> (64% documented)</p>
+        <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CocoaLumberjack Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DDDispatchQueueLogFormatter Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../arc.html">ARC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../appcode-support.html">AppCode-support</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../architecture.html">Architecture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../combineloggers.html">CombineLoggers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../customcontext.html">CustomContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../customformatters.html">CustomFormatters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../customloglevels.html">CustomLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../customloggers.html">CustomLoggers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../dynamicloglevels.html">DynamicLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../faq.html">FAQ</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../finegrainedlogging.html">FineGrainedLogging</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../gettingstarted.html">GettingStarted</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../logfilemanagement.html">LogFileManagement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../perloggerloglevels.html">PerLoggerLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../peruserloglevels.html">PerUserLogLevels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../performance.html">Performance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../problemsolution.html">ProblemSolution</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../readme.html">README</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../xcodecolors.html">XcodeColors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../xcodetricks.html">XcodeTricks</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CLIColor.html">CLIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDASLLogCapture.html">DDASLLogCapture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDASLLogger.html">DDASLLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDAbstractDatabaseLogger.html">DDAbstractDatabaseLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDAbstractLogger.html">DDAbstractLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)DDAtomicCounter">DDAtomicCounter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDContextBlacklistFilterLogFormatter.html">DDContextBlacklistFilterLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDContextWhitelistFilterLogFormatter.html">DDContextWhitelistFilterLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDDispatchQueueLogFormatter.html">DDDispatchQueueLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDFileLogger.html">DDFileLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLog.html">DDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileFormatterDefault.html">DDLogFileFormatterDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileInfo.html">DDLogFileInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogFileManagerDefault.html">DDLogFileManagerDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLogMessage.html">DDLogMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDLoggerInformation.html">DDLoggerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDMultiFormatter.html">DDMultiFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDOSLogger.html">DDOSLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DDTTYLogger.html">DDTTYLogger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CocoaLumberjackVersionNumber">CocoaLumberjackVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CocoaLumberjackVersionString">CocoaLumberjackVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDLoggerNameASL">DDLoggerNameASL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDLoggerNameFile">DDLoggerNameFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDLoggerNameOS">DDLoggerNameOS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDLoggerNameTTY">DDLoggerNameTTY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDQualityOfServiceBackground">DDQualityOfServiceBackground</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDQualityOfServiceDefault">DDQualityOfServiceDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDQualityOfServiceUnspecified">DDQualityOfServiceUnspecified</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDQualityOfServiceUserInitiated">DDQualityOfServiceUserInitiated</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDQualityOfServiceUserInteractive">DDQualityOfServiceUserInteractive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DDQualityOfServiceUtility">DDQualityOfServiceUtility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDASLDDLogValue">kDDASLDDLogValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDASLKeyDDLog">kDDASLKeyDDLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogFilesDiskQuota">kDDDefaultLogFilesDiskQuota</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogMaxFileSize">kDDDefaultLogMaxFileSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogMaxNumLogFiles">kDDDefaultLogMaxNumLogFiles</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kDDDefaultLogRollingFrequency">kDDDefaultLogRollingFrequency</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DDDispatchQueueLogFormatterMode.html">DDDispatchQueueLogFormatterMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogFlag.html">DDLogFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogLevel.html">DDLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DDLogMessageOptions.html">DDLogMessageOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DDAtomicCountable.html">DDAtomicCountable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogFileManager.html">DDLogFileManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogFormatter.html">DDLogFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDLogger.html">DDLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DDRegisteredDynamicLogging.html">DDRegisteredDynamicLogging</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:DDTTYLogger.h@T@DDColor">DDColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:DDLoggerNames.h@T@DDLoggerName">DDLoggerName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:DDDispatchQueueLogFormatter.h@T@DDQualityOfServiceName">DDQualityOfServiceName</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@DDExtractFileNameWithoutExtension">DDExtractFileNameWithoutExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:DDTTYLogger.h@F@DDMakeColor">DDMakeColor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DDDispatchQueueLogFormatter</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">DDDispatchQueueLogFormatter</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols/DDLogFormatter.html">DDLogFormatter</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>This class provides a log formatter that prints the dispatch_queue label instead of the mach_thread_id.</p>
+
+<p>A log formatter can be added to any logger to format and/or filter its output.
+ You can learn more about log formatters here:
+ Documentation/CustomFormatters.md</p>
+
+<p>A typical <code>NSLog</code> (or <code><a href="../Classes/DDTTYLogger.html">DDTTYLogger</a></code>) prints detailed info as <code>[&lt;process_id&gt;:&lt;thread_id&gt;]</code>.
+ For example:</p>
+
+<p><code>2011-10-17 20:21:45.435 AppName[19928:5207] Your log message here</code></p>
+
+<p>Where:
+ <code>- 19928 = process id</code>
+ <code>-  5207 = thread id (mach_thread_id printed in hex)</code></p>
+
+<p>When using grand central dispatch (GCD), this information is less useful.
+ This is because a single serial dispatch queue may be run on any thread from an internally managed thread pool.
+ For example:</p>
+
+<p><code>2011-10-17 20:32:31.111 AppName[19954:4d07] Message from my_serial_dispatch_queue</code>
+ <code>2011-10-17 20:32:31.112 AppName[19954:5207] Message from my_serial_dispatch_queue</code>
+ <code>2011-10-17 20:32:31.113 AppName[19954:2c55] Message from my_serial_dispatch_queue</code></p>
+
+<p>This formatter allows you to replace the standard <code>[box:info]</code> with the dispatch_queue name.
+ For example:</p>
+
+<p><code>2011-10-17 20:32:31.111 AppName[img-scaling] Message from my_serial_dispatch_queue</code>
+ <code>2011-10-17 20:32:31.112 AppName[img-scaling] Message from my_serial_dispatch_queue</code>
+ <code>2011-10-17 20:32:31.113 AppName[img-scaling] Message from my_serial_dispatch_queue</code></p>
+
+<p>If the dispatch_queue doesn&rsquo;t have a set name, then it falls back to the thread name.
+ If the current thread doesn&rsquo;t have a set name, then it falls back to the mach_thread_id in hex (like normal).</p>
+
+<p>Note: If manually creating your own background threads (via <code>NSThread/alloc/init</code> or <code>NSThread/detachNeThread</code>),
+ you can use <code>[[NSThread currentThread] setName:(NSString *)]</code>.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDDispatchQueueLogFormatter(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDDispatchQueueLogFormatter(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Standard init method.
+ Configure using properties as desired.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L118">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDDispatchQueueLogFormatter(im)initWithMode:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithMode:" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)DDDispatchQueueLogFormatter(im)initWithMode:">-initWithMode:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>DDDispatchQueueLogFormatter is always shareable</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>Initializer with ability to set the queue mode</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithMode</span><span class="p">:(</span><span class="n"><a href="../Enums/DDDispatchQueueLogFormatterMode.html">DDDispatchQueueLogFormatterMode</a></span><span class="p">)</span><span class="nv">mode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">mode</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDDispatchQueueLogFormatterMode.html">DDDispatchQueueLogFormatterMode</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>choose between DDDispatchQueueLogFormatterModeShareble and DDDispatchQueueLogFormatterModeNonShareble, depending if the formatter is shared between several loggers or not</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L125">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDDispatchQueueLogFormatter(py)minQueueLength"></a>
+                    <a name="//apple_ref/objc/Property/minQueueLength" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDDispatchQueueLogFormatter(py)minQueueLength">minQueueLength</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The minQueueLength restricts the minimum size of the [detail box].
+ If the minQueueLength is set to 0, there is no restriction.</p>
+
+<p>For example, say a dispatch_queue has a label of &ldquo;diskIO&rdquo;:</p>
+
+<p>If the minQueueLength is 0: [diskIO]
+ If the minQueueLength is 4: [diskIO]
+ If the minQueueLength is 5: [diskIO]
+ If the minQueueLength is 6: [diskIO]
+ If the minQueueLength is 7: [diskIO ]
+ If the minQueueLength is 8: [diskIO  ]</p>
+
+<p>The default minQueueLength is 0 (no minimum, so [detail box] won&rsquo;t be padded).</p>
+
+<p>If you want every [detail box] to have the exact same width,
+ set both minQueueLength and maxQueueLength to the same value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSUInteger</span> <span class="n">minQueueLength</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">minQueueLength</span><span class="p">:</span> <span class="kt">UInt</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L145">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDDispatchQueueLogFormatter(py)maxQueueLength"></a>
+                    <a name="//apple_ref/objc/Property/maxQueueLength" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDDispatchQueueLogFormatter(py)maxQueueLength">maxQueueLength</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The maxQueueLength restricts the number of characters that will be inside the [detail box].
+ If the maxQueueLength is 0, there is no restriction.</p>
+
+<p>For example, say a dispatch_queue has a label of &ldquo;diskIO&rdquo;:</p>
+
+<p>If the maxQueueLength is 0: [diskIO]
+ If the maxQueueLength is 4: [disk]
+ If the maxQueueLength is 5: [diskI]
+ If the maxQueueLength is 6: [diskIO]
+ If the maxQueueLength is 7: [diskIO]
+ If the maxQueueLength is 8: [diskIO]</p>
+
+<p>The default maxQueueLength is 0 (no maximum, so [detail box] won&rsquo;t be truncated).</p>
+
+<p>If you want every [detail box] to have the exact same width,
+ set both minQueueLength and maxQueueLength to the same value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSUInteger</span> <span class="n">maxQueueLength</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">maxQueueLength</span><span class="p">:</span> <span class="kt">UInt</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L165">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDDispatchQueueLogFormatter(im)replacementStringForQueueLabel:"></a>
+                    <a name="//apple_ref/objc/Method/-replacementStringForQueueLabel:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDDispatchQueueLogFormatter(im)replacementStringForQueueLabel:">-replacementStringForQueueLabel:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sometimes queue labels have long names like &ldquo;com.apple.main-queue&rdquo;,
+ but you&rsquo;d prefer something shorter like simply &ldquo;main&rdquo;.</p>
+
+<p>This method allows you to set such preferred replacements.
+ The above example is set by default.</p>
+
+<p>To remove/undo a previous replacement, invoke this method with nil for the &lsquo;shortLabel&rsquo; parameter.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">replacementStringForQueueLabel</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">longLabel</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">replacementString</span><span class="p">(</span><span class="n">forQueueLabel</span> <span class="nv">longLabel</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L176">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDDispatchQueueLogFormatter(im)setReplacementString:forQueueLabel:"></a>
+                    <a name="//apple_ref/objc/Method/-setReplacementString:forQueueLabel:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDDispatchQueueLogFormatter(im)setReplacementString:forQueueLabel:">-setReplacementString:<wbr>forQueueLabel:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>See the <code>replacementStringForQueueLabel:</code> description</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setReplacementString</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">shortLabel</span>
+               <span class="nf">forQueueLabel</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">longLabel</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setReplacementString</span><span class="p">(</span><span class="n">_</span> <span class="nv">shortLabel</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">forQueueLabel</span> <span class="nv">longLabel</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L181">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/OverridableMethods"></a>
+                <a name="//apple_ref/objc/Section/OverridableMethods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/OverridableMethods"></a>
+                  <h3 class="section-name"><p>OverridableMethods</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDDispatchQueueLogFormatter(im)configureDateFormatter:"></a>
+                    <a name="//apple_ref/objc/Method/-configureDateFormatter:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDDispatchQueueLogFormatter(im)configureDateFormatter:">-configureDateFormatter:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Date formatter default configuration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">configureDateFormatter</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDateFormatter</span> <span class="o">*</span><span class="p">)</span><span class="nv">dateFormatter</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureDateFormatter</span><span class="p">(</span><span class="n">_</span> <span class="nv">dateFormatter</span><span class="p">:</span> <span class="kt">DateFormatter</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L193">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDDispatchQueueLogFormatter(im)stringFromDate:"></a>
+                    <a name="//apple_ref/objc/Method/-stringFromDate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDDispatchQueueLogFormatter(im)stringFromDate:">-stringFromDate:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Formatter method to transfrom from date to string</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">stringFromDate</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nv">date</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">string</span><span class="p">(</span><span class="n">from</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L198">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDDispatchQueueLogFormatter(im)queueThreadLabelForLogMessage:"></a>
+                    <a name="//apple_ref/objc/Method/-queueThreadLabelForLogMessage:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDDispatchQueueLogFormatter(im)queueThreadLabelForLogMessage:">-queueThreadLabelForLogMessage:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method to compute the queue thread label</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">queueThreadLabelForLogMessage</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/DDLogMessage.html">DDLogMessage</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">logMessage</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">queueThreadLabel</span><span class="p">(</span><span class="k">for</span> <span class="nv">logMessage</span><span class="p">:</span> <span class="kt"><a href="../Classes/DDLogMessage.html">DDLogMessage</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L203">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DDDispatchQueueLogFormatter(im)formatLogMessage:"></a>
+                    <a name="//apple_ref/objc/Method/-formatLogMessage:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DDDispatchQueueLogFormatter(im)formatLogMessage:">-formatLogMessage:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The actual method that formats a message (transforms a <code><a href="../Classes/DDLogMessage.html">DDLogMessage</a></code> model into a printable string)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">formatLogMessage</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/DDLogMessage.html">DDLogMessage</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">logMessage</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L208">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-05-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

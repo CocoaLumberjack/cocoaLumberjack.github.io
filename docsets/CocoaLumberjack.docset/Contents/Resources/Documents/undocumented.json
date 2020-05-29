@@ -1,6 +1,19 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/Supporting Files/CocoaLumberjack.h",
+      "line": 63,
+      "symbol": "CocoaLumberjackVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/Supporting Files/CocoaLumberjack.h",
+      "line": 66,
+      "symbol": "CocoaLumberjackVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    }
   ],
-  "source_directory": "/Users/bogdan/Github/CocoaLumberjack"
+  "source_directory": "/Users/bogdanp/GitHub/CocoaLumberjack"
 }

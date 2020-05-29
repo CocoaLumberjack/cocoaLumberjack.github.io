@@ -1,460 +1,705 @@
 {
   "warnings": [
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDASLLogger.h",
-      "line": 26,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/Supporting Files/CocoaLumberjack.h",
+      "line": 63,
+      "symbol": "CocoaLumberjackVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/Supporting Files/CocoaLumberjack.h",
+      "line": 66,
+      "symbol": "CocoaLumberjackVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDASLLogger.h",
+      "line": 28,
       "symbol": "kDDASLKeyDDLog",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDASLLogger.h",
-      "line": 29,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDASLLogger.h",
+      "line": 31,
       "symbol": "kDDASLDDLogValue",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 40,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h",
+      "line": 35,
+      "symbol": "DDAbstractDatabaseLogger._saveThreshold",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h",
+      "line": 36,
+      "symbol": "DDAbstractDatabaseLogger._saveInterval",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h",
+      "line": 37,
+      "symbol": "DDAbstractDatabaseLogger._maxAge",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h",
+      "line": 38,
+      "symbol": "DDAbstractDatabaseLogger._deleteInterval",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h",
+      "line": 39,
+      "symbol": "DDAbstractDatabaseLogger._deleteOnEverySave",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h",
+      "line": 41,
+      "symbol": "DDAbstractDatabaseLogger._saveTimerSuspended",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h",
+      "line": 42,
+      "symbol": "DDAbstractDatabaseLogger._unsavedCount",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h",
+      "line": 43,
+      "symbol": "DDAbstractDatabaseLogger._unsavedTime",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h",
+      "line": 44,
+      "symbol": "DDAbstractDatabaseLogger._saveTimer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h",
+      "line": 45,
+      "symbol": "DDAbstractDatabaseLogger._lastDeleteTime",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h",
+      "line": 46,
+      "symbol": "DDAbstractDatabaseLogger._deleteTimer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDContextFilterLogFormatter.h",
+      "line": 90,
+      "symbol": "DDContextBlacklistFilterLogFormatter.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h",
+      "line": 68,
+      "symbol": "DDQualityOfServiceUserInteractive",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h",
+      "line": 69,
+      "symbol": "DDQualityOfServiceUserInitiated",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h",
+      "line": 70,
+      "symbol": "DDQualityOfServiceDefault",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h",
+      "line": 71,
+      "symbol": "DDQualityOfServiceUtility",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h",
+      "line": 72,
+      "symbol": "DDQualityOfServiceBackground",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h",
+      "line": 73,
+      "symbol": "DDQualityOfServiceUnspecified",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h",
+      "line": 215,
+      "symbol": "DDAtomicCountable",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h",
+      "line": 217,
+      "symbol": "DDAtomicCountable.-initWithDefaultValue:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h",
+      "line": 218,
+      "symbol": "DDAtomicCountable.-increment",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h",
+      "line": 219,
+      "symbol": "DDAtomicCountable.-decrement",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h",
+      "line": 220,
+      "symbol": "DDAtomicCountable.-value",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h",
+      "line": 225,
+      "symbol": "DDAtomicCounter",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger+Buffering.h",
+      "line": 20,
+      "symbol": "DDFileLogger(Buffering)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger+Buffering.h",
+      "line": 22,
+      "symbol": "DDFileLogger.-wrapWithBuffer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger+Buffering.h",
+      "line": 23,
+      "symbol": "DDFileLogger.-unwrapFromBuffer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 42,
       "symbol": "kDDDefaultLogRollingFrequency",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 41,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 43,
       "symbol": "kDDDefaultLogMaxNumLogFiles",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 42,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 44,
       "symbol": "kDDDefaultLogFilesDiskQuota",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 306,
-      "symbol": "DDFileLogger._currentLogFileInfo",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 449,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 492,
       "symbol": "DDLogFileInfo.filePath",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 450,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 493,
       "symbol": "DDLogFileInfo.fileName",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 453,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 495,
       "symbol": "DDLogFileInfo.fileAttributes",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 458,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 497,
       "symbol": "DDLogFileInfo.creationDate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 459,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 498,
       "symbol": "DDLogFileInfo.modificationDate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 461,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 500,
       "symbol": "DDLogFileInfo.fileSize",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 463,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 502,
       "symbol": "DDLogFileInfo.age",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 465,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 504,
       "symbol": "DDLogFileInfo.isArchived",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 467,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 506,
       "symbol": "DDLogFileInfo.+logFileWithPath:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 469,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 508,
       "symbol": "DDLogFileInfo.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 470,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 509,
       "symbol": "DDLogFileInfo.-initWithFilePath:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 472,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 511,
       "symbol": "DDLogFileInfo.-reset",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 473,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 512,
       "symbol": "DDLogFileInfo.-renameFile:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 507,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 514,
       "symbol": "DDLogFileInfo.-hasExtendedAttributeWithName:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 509,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 516,
       "symbol": "DDLogFileInfo.-addExtendedAttributeWithName:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 510,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 517,
       "symbol": "DDLogFileInfo.-removeExtendedAttributeWithName:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 514,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 519,
       "symbol": "DDLogFileInfo.-reverseCompareByCreationDate:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDFileLogger.h",
-      "line": 515,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h",
+      "line": 520,
       "symbol": "DDLogFileInfo.-reverseCompareByModificationDate:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 767,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 773,
       "symbol": "DDLogMessage._message",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 768,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 774,
       "symbol": "DDLogMessage._level",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 769,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 775,
       "symbol": "DDLogMessage._flag",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 770,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 776,
       "symbol": "DDLogMessage._context",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 771,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 777,
       "symbol": "DDLogMessage._file",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 772,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 778,
       "symbol": "DDLogMessage._fileName",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 773,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 779,
       "symbol": "DDLogMessage._function",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 774,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 780,
       "symbol": "DDLogMessage._line",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 775,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 781,
       "symbol": "DDLogMessage._tag",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 776,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 782,
       "symbol": "DDLogMessage._options",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 777,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 783,
       "symbol": "DDLogMessage._timestamp",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 778,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 784,
       "symbol": "DDLogMessage._threadID",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 779,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 785,
       "symbol": "DDLogMessage._threadName",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 780,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 786,
       "symbol": "DDLogMessage._queueLabel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 834,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 787,
+      "symbol": "DDLogMessage._qos",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 841,
       "symbol": "DDLogMessage.level",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 835,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 842,
       "symbol": "DDLogMessage.flag",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 836,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 843,
       "symbol": "DDLogMessage.context",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 837,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 844,
       "symbol": "DDLogMessage.file",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 838,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 845,
       "symbol": "DDLogMessage.fileName",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 839,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 846,
       "symbol": "DDLogMessage.function",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 840,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 847,
       "symbol": "DDLogMessage.line",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 841,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 848,
       "symbol": "DDLogMessage.tag",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 842,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 849,
       "symbol": "DDLogMessage.options",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 843,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 850,
       "symbol": "DDLogMessage.timestamp",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 844,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 851,
       "symbol": "DDLogMessage.threadID",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 845,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 852,
       "symbol": "DDLogMessage.threadName",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 846,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 853,
       "symbol": "DDLogMessage.queueLabel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 874,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 854,
+      "symbol": "DDLogMessage.qos",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 882,
       "symbol": "DDAbstractLogger._logFormatter",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 875,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 883,
       "symbol": "DDAbstractLogger._loggerQueue",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 878,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 886,
       "symbol": "DDAbstractLogger.logFormatter",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 879,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 887,
       "symbol": "DDAbstractLogger.loggerQueue",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 901,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 909,
       "symbol": "DDLoggerInformation.logger",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 902,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 910,
       "symbol": "DDLoggerInformation.level",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDLog.h",
-      "line": 904,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h",
+      "line": 912,
       "symbol": "DDLoggerInformation.+informationWithLogger:andLevel:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDTTYLogger.h",
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLoggerNames.h",
+      "line": 20,
+      "symbol": "DDLoggerName",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLoggerNames.h",
+      "line": 22,
+      "symbol": "DDLoggerNameOS",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLoggerNames.h",
+      "line": 23,
+      "symbol": "DDLoggerNameFile",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLoggerNames.h",
+      "line": 25,
+      "symbol": "DDLoggerNameTTY",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLoggerNames.h",
+      "line": 27,
+      "symbol": "DDLoggerNameASL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDTTYLogger.h",
       "line": 40,
       "symbol": "DDColor",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDTTYLogger.h",
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDTTYLogger.h",
       "line": 41,
       "symbol": "DDMakeColor",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDTTYLogger.h",
-      "line": 172,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDTTYLogger.h",
+      "line": 178,
       "symbol": "DDTTYLogger.-clearColorsForFlag:context:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDTTYLogger.h",
-      "line": 173,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDTTYLogger.h",
+      "line": 179,
       "symbol": "DDTTYLogger.-clearColorsForTag:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDTTYLogger.h",
-      "line": 174,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDTTYLogger.h",
+      "line": 180,
       "symbol": "DDTTYLogger.-clearColorsForAllFlags",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDTTYLogger.h",
-      "line": 175,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDTTYLogger.h",
+      "line": 181,
       "symbol": "DDTTYLogger.-clearColorsForAllTags",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bogdan/Github/CocoaLumberjack/Classes/DDTTYLogger.h",
-      "line": 176,
+      "file": "/Users/bogdanp/GitHub/CocoaLumberjack/Sources/CocoaLumberjack/include/CocoaLumberjack/DDTTYLogger.h",
+      "line": 182,
       "symbol": "DDTTYLogger.-clearAllColors",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/bogdan/Github/CocoaLumberjack"
+  "source_directory": "/Users/bogdanp/GitHub/CocoaLumberjack"
 }
