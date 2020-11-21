@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Class/DDLoggerInformation" class="dashAnchor"></a>
     <a title="DDLoggerInformation Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CocoaLumberjack 3.6.1 Docs</a> (64% documented)</p>
+        <p><a href="../index.html">CocoaLumberjack 3.7.0 Docs</a> (64% documented)</p>
         <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -284,12 +292,21 @@
             <h1>DDLoggerInformation</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">DDLoggerInformation</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">DDLoggerInformation</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
             <p>/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h#L914-L922">Show on GitHub</a>
+              </div>
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -324,7 +341,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h#L">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -359,7 +376,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h#L">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -390,12 +407,12 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">logger</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DDLogger.html">DDLogger</a></span><span class="p">,</span> <span class="n">andLevel</span> <span class="nv">level</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDLogLevel.html">DDLogLevel</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">logger</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DDLogger.html">DDLogger</a></span><span class="p">,</span> <span class="n">andLevel</span> <span class="nv">level</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDLogLevel.html">DDLogLevel</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h#L912-L913">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h#L919-L920">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -405,8 +422,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-05-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-11-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

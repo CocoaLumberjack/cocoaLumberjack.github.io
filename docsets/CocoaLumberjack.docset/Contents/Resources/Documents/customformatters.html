@@ -8,13 +8,21 @@
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a title="CustomFormatters  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">CocoaLumberjack 3.6.1 Docs</a> (64% documented)</p>
+        <p><a href="index.html">CocoaLumberjack 3.7.0 Docs</a> (64% documented)</p>
         <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -306,11 +314,11 @@
  * The formatter may also optionally filter the log message by returning nil,
  * in which case the logger will not log the message.
  **/</span>
-<span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">formatLogMessage</span><span class="p">:(</span><span class="n">DDLogMessage</span> <span class="o">*</span><span class="p">)</span><span class="nv">logMessage</span><span class="p">;</span>
+<span class="o">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">formatLogMessage</span><span class="o">:</span><span class="p">(</span><span class="n">DDLogMessage</span> <span class="o">*</span><span class="p">)</span><span class="n">logMessage</span><span class="p">;</span>
 
 <span class="k">@optional</span>
-<span class="c1">// ...</span>
-<span class="k">@end</span>
+<span class="c1">// ...
+</span><span class="k">@end</span>
 </code></pre>
 
 <p>It&rsquo;s pretty straight-forward. The single method takes, as a parameter, an instance of <code><a href="Classes/DDLogMessage.html">DDLogMessage</a></code> which contains all the information related to the log message including:</p>
@@ -331,12 +339,12 @@
 <p>Let&rsquo;s write a simple formatter that automatically simply prepends the log level before every log message.  </p>
 
 <p>The idea is to get log messages like this:</p>
-<pre class="highlight objective_c"><code><span class="n">DDLogError</span><span class="p">(</span><span class="s">@"Paper Jam!"</span><span class="p">);</span>       <span class="c1">// E | Paper Jam!</span>
-<span class="n">DDLogWarn</span><span class="p">(</span><span class="s">@"Low toner."</span><span class="p">);</span>        <span class="c1">// W | Low toner.</span>
-<span class="n">DDLogInfo</span><span class="p">(</span><span class="s">@"Doc printed."</span><span class="p">);</span>      <span class="c1">// I | Doc printed.</span>
-<span class="n">DDLogDebug</span><span class="p">(</span><span class="s">@"Debugging"</span><span class="p">);</span>        <span class="c1">// D | Debugging</span>
-<span class="n">DDLogVerbose</span><span class="p">(</span><span class="s">@"Init doc_parse"</span><span class="p">);</span> <span class="c1">// V | Init doc_parse.</span>
-</code></pre>
+<pre class="highlight objective_c"><code><span class="n">DDLogError</span><span class="p">(</span><span class="s">@"Paper Jam!"</span><span class="p">);</span>       <span class="c1">// E | Paper Jam!
+</span><span class="n">DDLogWarn</span><span class="p">(</span><span class="s">@"Low toner."</span><span class="p">);</span>        <span class="c1">// W | Low toner.
+</span><span class="n">DDLogInfo</span><span class="p">(</span><span class="s">@"Doc printed."</span><span class="p">);</span>      <span class="c1">// I | Doc printed.
+</span><span class="n">DDLogDebug</span><span class="p">(</span><span class="s">@"Debugging"</span><span class="p">);</span>        <span class="c1">// D | Debugging
+</span><span class="n">DDLogVerbose</span><span class="p">(</span><span class="s">@"Init doc_parse"</span><span class="p">);</span> <span class="c1">// V | Init doc_parse.
+</span></code></pre>
 
 <p>MyCustomFormatter.h</p>
 <pre class="highlight objective_c"><code><span class="cp">#import &lt;Foundation/Foundation.h&gt;
@@ -392,7 +400,7 @@
  * The formatter may also optionally filter the log message by returning nil,
  * in which case the logger will not log the message.
  **/</span>
-<span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">formatLogMessage</span><span class="p">:(</span><span class="n">DDLogMessage</span> <span class="o">*</span><span class="p">)</span><span class="nv">logMessage</span><span class="p">;</span>
+<span class="o">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">formatLogMessage</span><span class="o">:</span><span class="p">(</span><span class="n">DDLogMessage</span> <span class="o">*</span><span class="p">)</span><span class="n">logMessage</span><span class="p">;</span>
 
 <span class="k">@optional</span>
 
@@ -405,7 +413,7 @@
  * Or if a formatter has potentially thread-unsafe code (e.g. NSDateFormatter),
  * it could possibly use these hooks to switch to thread-safe versions of the code.
  **/</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didAddToLogger</span><span class="p">:(</span><span class="n">id</span> <span class="o">&lt;</span><span class="n">DDLogger</span><span class="o">&gt;</span><span class="p">)</span><span class="nv">logger</span><span class="p">;</span>
+<span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didAddToLogger</span><span class="o">:</span><span class="p">(</span><span class="n">id</span> <span class="o">&lt;</span><span class="n">DDLogger</span><span class="o">&gt;</span><span class="p">)</span><span class="n">logger</span><span class="p">;</span>
 <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">willRemoveFromLogger</span><span class="p">:(</span><span class="n">id</span> <span class="o">&lt;</span><span class="n">DDLogger</span><span class="o">&gt;</span><span class="p">)</span><span class="nv">logger</span><span class="p">;</span>
 
 <span class="k">@end</span>
@@ -414,12 +422,12 @@
 <p>Using these hooks, we can add a very simple measure to ensure we don&rsquo;t accidentally shoot ourself in the foot in the future.</p>
 
 <p>This time the idea is to get log messages like this:</p>
-<pre class="highlight objective_c"><code><span class="n">DDLogError</span><span class="p">(</span><span class="s">@"Paper Jam!"</span><span class="p">);</span>       <span class="c1">// E 2010/05/20 15:33:18:621 | Paper Jam!</span>
-<span class="n">DDLogWarn</span><span class="p">(</span><span class="s">@"Low toner."</span><span class="p">);</span>        <span class="c1">// W 2010/05/20 15:33:18:621 | Low toner.</span>
-<span class="n">DDLogInfo</span><span class="p">(</span><span class="s">@"Doc printed."</span><span class="p">);</span>      <span class="c1">// I 2010/05/20 15:33:18:621 | Doc printed.</span>
-<span class="n">DDLogDebug</span><span class="p">(</span><span class="s">@"Debugging"</span><span class="p">);</span>        <span class="c1">// D 2010/05/20 15:33:18:621 | Debugging</span>
-<span class="n">DDLogVerbose</span><span class="p">(</span><span class="s">@"Init doc_parse"</span><span class="p">);</span> <span class="c1">// V 2010/05/20 15:33:18:621 | Init doc_parse.</span>
-</code></pre>
+<pre class="highlight objective_c"><code><span class="n">DDLogError</span><span class="p">(</span><span class="s">@"Paper Jam!"</span><span class="p">);</span>       <span class="c1">// E 2010/05/20 15:33:18:621 | Paper Jam!
+</span><span class="n">DDLogWarn</span><span class="p">(</span><span class="s">@"Low toner."</span><span class="p">);</span>        <span class="c1">// W 2010/05/20 15:33:18:621 | Low toner.
+</span><span class="n">DDLogInfo</span><span class="p">(</span><span class="s">@"Doc printed."</span><span class="p">);</span>      <span class="c1">// I 2010/05/20 15:33:18:621 | Doc printed.
+</span><span class="n">DDLogDebug</span><span class="p">(</span><span class="s">@"Debugging"</span><span class="p">);</span>        <span class="c1">// D 2010/05/20 15:33:18:621 | Debugging
+</span><span class="n">DDLogVerbose</span><span class="p">(</span><span class="s">@"Init doc_parse"</span><span class="p">);</span> <span class="c1">// V 2010/05/20 15:33:18:621 | Init doc_parse.
+</span></code></pre>
 
 <p>MyCustomFormatter.h</p>
 <pre class="highlight objective_c"><code><span class="cp">#import &lt;Foundation/Foundation.h&gt;
@@ -445,7 +453,7 @@
     <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">formatLogMessage</span><span class="p">:(</span><span class="n">DDLogMessage</span> <span class="o">*</span><span class="p">)</span><span class="nv">logMessage</span> <span class="p">{</span>
+<span class="o">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">formatLogMessage</span><span class="o">:</span><span class="p">(</span><span class="n">DDLogMessage</span> <span class="o">*</span><span class="p">)</span><span class="n">logMessage</span> <span class="p">{</span>
     <span class="n">NSString</span> <span class="o">*</span><span class="n">logLevel</span><span class="p">;</span>
     <span class="k">switch</span> <span class="p">(</span><span class="n">logMessage</span><span class="o">-&gt;</span><span class="n">_flag</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">case</span> <span class="n">DDLogFlagError</span>    <span class="p">:</span> <span class="n">logLevel</span> <span class="o">=</span> <span class="s">@"E"</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>
@@ -461,12 +469,12 @@
     <span class="k">return</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithFormat</span><span class="p">:</span><span class="s">@"%@ %@ | %@"</span><span class="p">,</span> <span class="n">logLevel</span><span class="p">,</span> <span class="n">dateAndTime</span><span class="p">,</span> <span class="n">logMsg</span><span class="p">];</span>
 <span class="p">}</span>
 
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didAddToLogger</span><span class="p">:(</span><span class="n">id</span> <span class="o">&lt;</span><span class="n">DDLogger</span><span class="o">&gt;</span><span class="p">)</span><span class="nv">logger</span> <span class="p">{</span>
+<span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didAddToLogger</span><span class="o">:</span><span class="p">(</span><span class="n">id</span> <span class="o">&lt;</span><span class="n">DDLogger</span><span class="o">&gt;</span><span class="p">)</span><span class="n">logger</span> <span class="p">{</span>
     <span class="n">loggerCount</span><span class="o">++</span><span class="p">;</span>
     <span class="n">NSAssert</span><span class="p">(</span><span class="n">loggerCount</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">,</span> <span class="s">@"This logger isn't thread-safe"</span><span class="p">);</span>
 <span class="p">}</span>
 
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">willRemoveFromLogger</span><span class="p">:(</span><span class="n">id</span> <span class="o">&lt;</span><span class="n">DDLogger</span><span class="o">&gt;</span><span class="p">)</span><span class="nv">logger</span> <span class="p">{</span>
+<span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">willRemoveFromLogger</span><span class="o">:</span><span class="p">(</span><span class="n">id</span> <span class="o">&lt;</span><span class="n">DDLogger</span><span class="o">&gt;</span><span class="p">)</span><span class="n">logger</span> <span class="p">{</span>
     <span class="n">loggerCount</span><span class="o">--</span><span class="p">;</span>
 <span class="p">}</span>
 
@@ -515,8 +523,8 @@
     <span class="kt">int32_t</span> <span class="n">loggerCount</span> <span class="o">=</span> <span class="p">[</span><span class="n">atomicLoggerCounter</span> <span class="nf">value</span><span class="p">];</span>
 
     <span class="k">if</span> <span class="p">(</span><span class="n">loggerCount</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// Single-threaded mode.</span>
-
+        <span class="c1">// Single-threaded mode.
+</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">threadUnsafeDateFormatter</span> <span class="o">==</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">threadUnsafeDateFormatter</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSDateFormatter</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span>
             <span class="p">[</span><span class="n">threadUnsafeDateFormatter</span> <span class="nf">setDateFormat</span><span class="p">:</span><span class="n">dateFormatString</span><span class="p">];</span>
@@ -524,9 +532,9 @@
 
         <span class="k">return</span> <span class="p">[</span><span class="n">threadUnsafeDateFormatter</span> <span class="nf">stringFromDate</span><span class="p">:</span><span class="n">date</span><span class="p">];</span>
     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="c1">// Multi-threaded mode.</span>
-        <span class="c1">// NSDateFormatter is NOT thread-safe.</span>
-
+        <span class="c1">// Multi-threaded mode.
+</span>        <span class="c1">// NSDateFormatter is NOT thread-safe.
+</span>
         <span class="n">NSString</span> <span class="o">*</span><span class="n">key</span> <span class="o">=</span> <span class="s">@"MyCustomFormatter_NSDateFormatter"</span><span class="p">;</span>
 
         <span class="n">NSMutableDictionary</span> <span class="o">*</span><span class="n">threadDictionary</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSThread</span> <span class="nf">currentThread</span><span class="p">]</span> <span class="nf">threadDictionary</span><span class="p">];</span>
@@ -573,8 +581,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-05-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-11-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

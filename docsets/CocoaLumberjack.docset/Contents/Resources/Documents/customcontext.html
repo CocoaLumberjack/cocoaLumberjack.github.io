@@ -8,13 +8,21 @@
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a title="CustomContext  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">CocoaLumberjack 3.6.1 Docs</a> (64% documented)</p>
+        <p><a href="index.html">CocoaLumberjack 3.7.0 Docs</a> (64% documented)</p>
         <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -298,8 +306,8 @@
 <p>Every log message that goes through the Lumberjack framework is turned into a DDLogMessage object. This object contains all kinds of juicy information:</p>
 <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">DDLogMessage</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSCopying</span><span class="o">&gt;</span>
 <span class="p">{</span>
-    <span class="c1">// Direct accessors to be used only for performance</span>
-    <span class="p">...</span>
+    <span class="c1">// Direct accessors to be used only for performance
+</span>    <span class="p">...</span>
 <span class="p">}</span>
 
 <span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">message</span><span class="p">;</span>
@@ -310,11 +318,11 @@
 <span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">fileName</span><span class="p">;</span>
 <span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">function</span><span class="p">;</span>
 <span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSUInteger</span> <span class="n">line</span><span class="p">;</span>
-<span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">id</span> <span class="n">tag</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">id</span> <span class="n">representedObject</span><span class="p">;</span>
 <span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">DDLogMessageOptions</span> <span class="n">options</span><span class="p">;</span>
 <span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSDate</span> <span class="o">*</span><span class="n">timestamp</span><span class="p">;</span>
-<span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">threadID</span><span class="p">;</span> <span class="c1">// ID as it appears in NSLog calculated from the machThreadID</span>
-<span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">threadName</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">threadID</span><span class="p">;</span> <span class="c1">// ID as it appears in NSLog calculated from the machThreadID
+</span><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">threadName</span><span class="p">;</span>
 <span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">queueLabel</span><span class="p">;</span>
 
 </code></pre>
@@ -346,8 +354,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-05-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-11-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

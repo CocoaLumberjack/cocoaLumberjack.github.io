@@ -8,13 +8,21 @@
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a title="XcodeColors  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">CocoaLumberjack 3.6.1 Docs</a> (64% documented)</p>
+        <p><a href="index.html">CocoaLumberjack 3.7.0 Docs</a> (64% documented)</p>
         <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -303,11 +311,11 @@ It allows you to use colors in the Xcode debugging console.</p>
 <h2 id='enable-colors' class='heading'>Enable Colors</h2>
 
 <p>All it takes is one extra line of code to enable colors in Lumberjack:</p>
-<pre class="highlight objective_c"><code><span class="c1">// Standard lumberjack initialization</span>
-<span class="p">[</span><span class="n">DDLog</span> <span class="nf">addLogger</span><span class="p">:[</span><span class="n">DDTTYLogger</span> <span class="nf">sharedInstance</span><span class="p">]];</span>
+<pre class="highlight objective_c"><code><span class="c1">// Standard lumberjack initialization
+</span><span class="p">[</span><span class="n">DDLog</span> <span class="nf">addLogger</span><span class="p">:[</span><span class="n">DDTTYLogger</span> <span class="nf">sharedInstance</span><span class="p">]];</span>
 
-<span class="c1">// And we also enable colors</span>
-<span class="p">[[</span><span class="n">DDTTYLogger</span> <span class="nf">sharedInstance</span><span class="p">]</span> <span class="nf">setColorsEnabled</span><span class="p">:</span><span class="nb">YES</span><span class="p">];</span>
+<span class="c1">// And we also enable colors
+</span><span class="p">[[</span><span class="n">DDTTYLogger</span> <span class="nf">sharedInstance</span><span class="p">]</span> <span class="nf">setColorsEnabled</span><span class="p">:</span><span class="nb">YES</span><span class="p">];</span>
 </code></pre>
 
 <p>The <strong>default color scheme</strong> (if you don&rsquo;t customize it) is:</p>
@@ -320,9 +328,9 @@ It allows you to use colors in the Xcode debugging console.</p>
 <p>However, <strong>you can fully customize the color schemes</strong> however you like!<br>
 In fact, you can customize the foreground and/or background colors.<br>
 And you can specify any RGB value you&rsquo;d like.</p>
-<pre class="highlight objective_c"><code><span class="c1">// Let's customize our colors.</span>
-<span class="c1">// DDLogInfo : Pink</span>
-
+<pre class="highlight objective_c"><code><span class="c1">// Let's customize our colors.
+// DDLogInfo : Pink
+</span>
 <span class="cp">#if TARGET_OS_IPHONE
 </span><span class="n">UIColor</span> <span class="o">*</span><span class="n">pink</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIColor</span> <span class="nf">colorWithRed</span><span class="p">:(</span><span class="mi">255</span><span class="o">/</span><span class="mi">255</span><span class="p">.</span><span class="mi">0</span><span class="p">)</span> <span class="nf">green</span><span class="p">:(</span><span class="mi">58</span><span class="o">/</span><span class="mi">255</span><span class="p">.</span><span class="mi">0</span><span class="p">)</span> <span class="n">blue</span><span class="o">:</span><span class="p">(</span><span class="mi">159</span><span class="o">/</span><span class="mi">255</span><span class="p">.</span><span class="mi">0</span><span class="p">)</span> <span class="n">alpha</span><span class="o">:</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">];</span>
 <span class="cp">#else
@@ -331,8 +339,8 @@ And you can specify any RGB value you&rsquo;d like.</p>
 </span>
 <span class="p">[[</span><span class="n">DDTTYLogger</span> <span class="nf">sharedInstance</span><span class="p">]</span> <span class="nf">setForegroundColor</span><span class="p">:</span><span class="n">pink</span> <span class="nf">backgroundColor</span><span class="p">:</span><span class="nb">nil</span> <span class="n">forFlag</span><span class="o">:</span><span class="n">DDLogFlagInfo</span><span class="p">];</span>
 
-<span class="n">DDLogInfo</span><span class="p">(</span><span class="s">@"Warming up printer"</span><span class="p">);</span> <span class="c1">// Prints in Pink !</span>
-</code></pre>
+<span class="n">DDLogInfo</span><span class="p">(</span><span class="s">@"Warming up printer"</span><span class="p">);</span> <span class="c1">// Prints in Pink !
+</span></code></pre>
 <h2 id='xcodecolors-and-ios' class='heading'>XcodeColors and iOS</h2>
 
 <p>You may occasionally notice that colors don&rsquo;t work when you&rsquo;re debugging your app in the simulator. And you may also notice that your colors never work when debugging on the actual device. How do I fix it so it works everywhere, all the time?</p>
@@ -364,8 +372,8 @@ And you can specify any RGB value you&rsquo;d like.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-05-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-11-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

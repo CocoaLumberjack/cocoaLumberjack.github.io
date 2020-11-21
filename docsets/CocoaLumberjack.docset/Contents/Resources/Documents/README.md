@@ -20,12 +20,13 @@ jazzy \
   --objc \
   --author CocoaLumberjack \
   --github_url https://github.com/CocoaLumberjack/CocoaLumberjack \
-  --github-file-prefix https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.4.2 \
-  --module-version 3.4.2 \
-  --umbrella-header Classes/CocoaLumberjack.h \
+  --github-file-prefix https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1 \
+  --module-version 3.6.1 \
+  --umbrella-header Sources/CocoaLumberjack/Supporting\ Files/CocoaLumberjack.h \
   --documentation=Documentation/\*.md \
   --module CocoaLumberjack \
   --output ../cocoaLumberjack.github.io
+  --framework-root Sources
 ```
 
 (assuming CocoaLumberjack and cocoaLumberjack.github.io live in the same folder)

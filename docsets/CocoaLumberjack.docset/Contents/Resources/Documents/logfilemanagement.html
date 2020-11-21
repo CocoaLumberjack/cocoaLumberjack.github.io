@@ -8,13 +8,21 @@
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a title="LogFileManagement  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">CocoaLumberjack 3.6.1 Docs</a> (64% documented)</p>
+        <p><a href="index.html">CocoaLumberjack 3.7.0 Docs</a> (64% documented)</p>
         <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -292,7 +300,7 @@
 <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">DDFileLogger</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">DDLogger</span><span class="o">&gt;</span>
 <span class="p">...</span>
 
-<span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span>
+<span class="o">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span>
 <span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithLogFileManager</span><span class="p">:(</span><span class="n">id</span> <span class="o">&lt;</span><span class="n">DDLogFileManager</span><span class="o">&gt;</span><span class="p">)</span><span class="nv">logFileManager</span> <span class="n">NS_DESIGNATED_INITIALIZER</span><span class="p">;</span>
 
 <span class="p">...</span>
@@ -308,12 +316,12 @@
 <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">DDLogFileManager</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
 <span class="err">@required</span>
 
-<span class="c1">// Public properties</span>
-
+<span class="c1">// Public properties
+</span>
 <span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="n">NSUInteger</span> <span class="n">maximumNumberOfLogFiles</span><span class="p">;</span>
 
-<span class="c1">// Public methods</span>
-
+<span class="c1">// Public methods
+</span>
 <span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">logsDirectory</span><span class="p">;</span>
 
 <span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="n">unsortedLogFilePaths</span><span class="p">;</span>
@@ -324,31 +332,28 @@
 <span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="n">sortedLogFileNames</span><span class="p">;</span>
 <span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="n">sortedLogFileInfos</span><span class="p">;</span>
 
-<span class="c1">// Private methods (only to be used by DDFileLogger)</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">createNewLogFile</span><span class="p">;</span>
+<span class="c1">// Private methods (only to be used by DDFileLogger)
+</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">createNewLogFileWithError</span><span class="p">(</span><span class="n">NSError</span><span class="o">**</span><span class="p">)</span><span class="n">error</span><span class="p">;</span>
 
 <span class="k">@optional</span>
 
-<span class="c1">// Notifications from DDFileLogger</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didArchiveLogFile</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">logFilePath</span><span class="p">;</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didRollAndArchiveLogFile</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">logFilePath</span><span class="p">;</span>
+<span class="c1">// Notifications from DDFileLogger
+</span>
+<span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didArchiveLogFile</span><span class="o">:</span><span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">logFilePath</span> <span class="n">wasRolled</span><span class="o">:</span><span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">wasRolled</span><span class="p">;</span>
 
 <span class="k">@end</span>
 </code></pre>
 
-<p>There are methods to get the logs directory, and various methods to get the list of log files. Then there is a method to create a new log file (that returns the new log file path). And lastly, there are hooks from <code><a href="Classes/DDFileLogger.html">DDFileLogger</a></code> to be notified of when a log file is rolled.</p>
-
-<p>The hooks are designed to allow you do something with those archived log files!</p>
+<p>There are methods to get the logs directory, and various methods to get the list of log files. Then there is a method to create a new log file (that returns the new log file path). And lastly, there is a hook from <code><a href="Classes/DDFileLogger.html">DDFileLogger</a></code> to be notified of when a log file is rolled. This hook is designed to allow you do something with those archived log files!</p>
 
 <p>The framework comes with a sample Xcode project that demonstrates compressing archived log files to save disk space. (It performs the compression using gzip.) The Xcode project name is <code>LogFileCompressor</code>. The <code>CompressingLogFileManager</code> class is ready to be used in your project, or you can use it as a template, or simply learn from it so you can do your own custom log file management.</p>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-05-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-11-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

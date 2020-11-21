@@ -8,13 +8,21 @@
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a title="CocoaLumberjack  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">CocoaLumberjack 3.6.1 Docs</a> (64% documented)</p>
+        <p><a href="index.html">CocoaLumberjack 3.7.0 Docs</a> (64% documented)</p>
         <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -294,13 +302,13 @@
 <a href="https://codecov.io/gh/CocoaLumberjack/CocoaLumberjack"><img src="https://codecov.io/gh/CocoaLumberjack/CocoaLumberjack/branch/master/graph/badge.svg" alt="codecov"></a>
 <a href="https://codebeat.co/projects/github-com-cocoalumberjack-cocoalumberjack-master"><img src="https://codebeat.co/badges/840b714a-c8f3-4936-ada4-363473cd4e6b" alt="codebeat badge"></a></p>
 
-<p><strong>CocoaLumberjack</strong> is a fast &amp; simple, yet powerful &amp; flexible logging framework for Mac and iOS.</p>
-<h3 id='how-to-get-started' class='heading'>How to get started</h3>
+<p><strong>CocoaLumberjack</strong> is a fast &amp; simple, yet powerful &amp; flexible logging framework for macOS, iOS, tvOS and watchOS.</p>
+<h2 id='how-to-get-started' class='heading'>How to get started</h2>
 
 <p>First, install CocoaLumberjack via <a href="http://cocoapods.org">CocoaPods</a>, <a href="https://github.com/Carthage/Carthage">Carthage</a>, <a href="https://swift.org/package-manager/">Swift Package Manager</a> or manually.
 Then use <code><a href="Classes/DDOSLogger.html">DDOSLogger</a></code> for iOS 10 and later, or <code><a href="Classes/DDTTYLogger.html">DDTTYLogger</a></code> and <code><a href="Classes/DDASLLogger.html">DDASLLogger</a></code> for earlier versions to begin logging messages.</p>
-<h4 id='cocoapods' class='heading'>CocoaPods</h4>
-<pre class="highlight ruby"><code><span class="n">platform</span> <span class="ss">:ios</span><span class="p">,</span> <span class="s1">'8.0'</span>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+<pre class="highlight ruby"><code><span class="n">platform</span> <span class="ss">:ios</span><span class="p">,</span> <span class="s1">'9.0'</span>
 
 <span class="n">target</span> <span class="s1">'SampleTarget'</span> <span class="k">do</span>
   <span class="n">use_frameworks!</span>
@@ -312,13 +320,13 @@ Then use <code><a href="Classes/DDOSLogger.html">DDOSLogger</a></code> for iOS 1
 For more details about how to use Swift with Lumberjack, see <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/issues/405">this conversation</a>.</p>
 
 <p>For Objective-C use the following:</p>
-<pre class="highlight ruby"><code><span class="n">platform</span> <span class="ss">:ios</span><span class="p">,</span> <span class="s1">'8.0'</span>
+<pre class="highlight ruby"><code><span class="n">platform</span> <span class="ss">:ios</span><span class="p">,</span> <span class="s1">'9.0'</span>
 
 <span class="n">target</span> <span class="s1">'SampleTarget'</span> <span class="k">do</span>
     <span class="n">pod</span> <span class="s1">'CocoaLumberjack'</span>
 <span class="k">end</span>
 </code></pre>
-<h4 id='carthage' class='heading'>Carthage</h4>
+<h3 id='carthage' class='heading'>Carthage</h3>
 
 <p>Carthage is a lightweight dependency manager for Swift and Objective-C. It leverages CocoaTouch modules and is less invasive than CocoaPods.</p>
 
@@ -327,16 +335,18 @@ For more details about how to use Swift with Lumberjack, see <a href="https://gi
 <p>Cartfile</p>
 <pre class="highlight plaintext"><code>github "CocoaLumberjack/CocoaLumberjack"
 </code></pre>
-<h4 id='swift-package-manager' class='heading'>Swift Package Manager</h4>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
 
 <p>As of CocoaLumberjack 3.6.0, you can use the Swift Package Manager as integration method.
 If you want to use the Swift Package Manager as integration method, either use Xcode to add the package dependency or add the following dependency to your Package.swift:</p>
-<pre class="highlight swift"><code><span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/CocoaLumberjack/CocoaLumberjack.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"3.6.0"</span><span class="p">),</span>
+<pre class="highlight swift"><code><span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/CocoaLumberjack/CocoaLumberjack.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"3.7.0"</span><span class="p">),</span>
 </code></pre>
-<h4 id='install-manually' class='heading'>Install manually</h4>
+
+<p>Note that you may need to add both products, <code>CocoaLumberjack</code> and <code>CocoaLumberjackSwift</code> to your target since SPM sometimes fails to detect that <code>CocoaLumerjackSwift</code> depends on <code>CocoaLumberjack</code>.</p>
+<h3 id='install-manually' class='heading'>Install manually</h3>
 
 <p>If you want to install CocoaLumberjack manually, read the <a href="https://raw.githubusercontent.com/CocoaLumberjack/CocoaLumberjack/master/Documentation/GettingStarted.md#manual-installation">manual installation</a> guide for more information.</p>
-<h4 id='swift-usage' class='heading'>Swift Usage</h4>
+<h3 id='swift-usage' class='heading'>Swift Usage</h3>
 
 <p>Usually, you can simply <code>import CocoaLumberjackSwift</code>. If you installed CocoaLumberjack using CocoaPods, you need to use <code>import CocoaLumberjack</code> instead.</p>
 <pre class="highlight swift"><code><span class="kt">DDLog</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="kt">DDOSLogger</span><span class="o">.</span><span class="n">sharedInstance</span><span class="p">)</span> <span class="c1">// Uses os_log</span>
@@ -354,15 +364,15 @@ If you want to use the Swift Package Manager as integration method, either use X
 <span class="kt">DDLogWarn</span><span class="p">(</span><span class="s">"Warn"</span><span class="p">)</span>
 <span class="kt">DDLogError</span><span class="p">(</span><span class="s">"Error"</span><span class="p">)</span>
 </code></pre>
-<h4 id='obj-c-usage' class='heading'>Obj-C usage</h4>
+<h3 id='obj-c-usage' class='heading'>Obj-C usage</h3>
 
 <p>If you&rsquo;re using Lumberjack as a framework, you can <code>@import CocoaLumberjack;</code>.
 Otherwise, <code>#import &lt;CocoaLumberjack/CocoaLumberjack.h&gt;</code></p>
-<pre class="highlight objective_c"><code><span class="p">[</span><span class="n">DDLog</span> <span class="nf">addLogger</span><span class="p">:[</span><span class="n">DDOSLogger</span> <span class="nf">sharedInstance</span><span class="p">]];</span> <span class="c1">// Uses os_log</span>
-
-<span class="n">DDFileLogger</span> <span class="o">*</span><span class="n">fileLogger</span> <span class="o">=</span> <span class="p">[[</span><span class="n">DDFileLogger</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span> <span class="c1">// File Logger</span>
-<span class="n">fileLogger</span><span class="p">.</span><span class="n">rollingFrequency</span> <span class="o">=</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">24</span><span class="p">;</span> <span class="c1">// 24 hour rolling</span>
-<span class="n">fileLogger</span><span class="p">.</span><span class="n">logFileManager</span><span class="p">.</span><span class="n">maximumNumberOfLogFiles</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+<pre class="highlight objective_c"><code><span class="p">[</span><span class="n">DDLog</span> <span class="nf">addLogger</span><span class="p">:[</span><span class="n">DDOSLogger</span> <span class="nf">sharedInstance</span><span class="p">]];</span> <span class="c1">// Uses os_log
+</span>
+<span class="n">DDFileLogger</span> <span class="o">*</span><span class="n">fileLogger</span> <span class="o">=</span> <span class="p">[[</span><span class="n">DDFileLogger</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span> <span class="c1">// File Logger
+</span><span class="n">fileLogger</span><span class="p">.</span><span class="n">rollingFrequency</span> <span class="o">=</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">24</span><span class="p">;</span> <span class="c1">// 24 hour rolling
+</span><span class="n">fileLogger</span><span class="p">.</span><span class="n">logFileManager</span><span class="p">.</span><span class="n">maximumNumberOfLogFiles</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
 <span class="p">[</span><span class="n">DDLog</span> <span class="nf">addLogger</span><span class="p">:</span><span class="n">fileLogger</span><span class="p">];</span>
 
 <span class="p">...</span>
@@ -373,36 +383,49 @@ Otherwise, <code>#import &lt;CocoaLumberjack/CocoaLumberjack.h&gt;</code></p>
 <span class="n">DDLogWarn</span><span class="p">(</span><span class="s">@"Warn"</span><span class="p">);</span>
 <span class="n">DDLogError</span><span class="p">(</span><span class="s">@"Error"</span><span class="p">);</span>
 </code></pre>
-<h4 id='more-information' class='heading'>More information</h4>
+<h3 id='objective-c-arc-semantic-issue' class='heading'>Objective-C ARC Semantic Issue</h3>
+
+<p>When integrating Lumberjack into an existing Objective-C it is possible to run into <code>Multiple methods named &#39;tag&#39; found with mismatched result, parameter type or attributes</code> build error.</p>
+
+<p>Add <code>#define DD_LEGACY_MESSAGE_TAG 0</code> before importing CocoaLumberjack or add <code>#define DD_LEGACY_MESSAGE_TAG 0</code> or add <code>-DDD_LEGACY_MESSAGE_TAG=0</code> to <em>Other C Flags</em>/<em>OTHER_CFLAGS</em> in your Xcode project.</p>
+<h2 id='a-href-https-github-com-apple-swift-log-swift-log-a-backend' class='heading'><a href="https://github.com/apple/swift-log">swift-log</a> backend</h2>
+
+<p>CocoaLumberjack also ships with a backend implementation for <a href="https://github.com/apple/swift-log">swift-log</a>.
+Simply add CocoaLumberjack as dependency to your SPM target (see above) and also add the <code>CocoaLumberjackSwiftLogBackend</code> product as dependency to your target.</p>
+
+<p>You can then use <code>DDLogHandler</code> as backend for swift-log, which will forward all messages to CocoaLumberjack&rsquo;s <code><a href="Classes/DDLog.html">DDLog</a></code>. You will still configure the loggers and log formatters you want via <code><a href="Classes/DDLog.html">DDLog</a></code>, but writing log messages will be done using <code>Logger</code> from swift-log.</p>
+
+<p>In your own log formatters, you can make use of the <code>swiftLogInfo</code> property on <code><a href="Classes/DDLogMessage.html">DDLogMessage</a></code> to retrieve the details of a message that is logged via swift-log.</p>
+<h3 id='more-information' class='heading'>More information</h3>
 
 <ul>
 <li>read the <a href="https://raw.githubusercontent.com/CocoaLumberjack/CocoaLumberjack/master/Documentation/GettingStarted.md">Getting started</a> guide, check out the <a href="https://raw.githubusercontent.com/CocoaLumberjack/CocoaLumberjack/master/Documentation/FAQ.md">FAQ</a> section or the other <a href="Documentation/">docs</a></li>
 <li>if you find issues or want to suggest improvements, create an issue or a pull request</li>
 <li>for all kinds of questions involving CocoaLumberjack, use the <a href="http://groups.google.com/group/cocoalumberjack">Google group</a> or StackOverflow (use <a href="http://stackoverflow.com/questions/tagged/lumberjack">#lumberjack</a>).</li>
 </ul>
-<h3 id='cocoalumberjack-3' class='heading'>CocoaLumberjack 3</h3>
-<h4 id='migrating-to-3-x' class='heading'>Migrating to 3.x</h4>
+<h2 id='cocoalumberjack-3' class='heading'>CocoaLumberjack 3</h2>
+<h3 id='migrating-to-3-x' class='heading'>Migrating to 3.x</h3>
 
 <ul>
 <li>To be determined</li>
 </ul>
-<h3 id='features' class='heading'>Features</h3>
-<h4 id='lumberjack-is-fast-amp-simple-yet-powerful-amp-flexible' class='heading'>Lumberjack is Fast &amp; Simple, yet Powerful &amp; Flexible.</h4>
+<h2 id='features' class='heading'>Features</h2>
+<h3 id='lumberjack-is-fast-amp-simple-yet-powerful-amp-flexible' class='heading'>Lumberjack is Fast &amp; Simple, yet Powerful &amp; Flexible.</h3>
 
 <p>It is similar in concept to other popular logging frameworks such as log4j, yet is designed specifically for Objective-C, and takes advantage of features such as multi-threading, grand central dispatch (if available), lockless atomic operations, and the dynamic nature of the Objective-C runtime.</p>
-<h4 id='lumberjack-is-fast' class='heading'>Lumberjack is Fast</h4>
+<h3 id='lumberjack-is-fast' class='heading'>Lumberjack is Fast</h3>
 
 <p>In most cases it is an order of magnitude faster than NSLog.</p>
-<h4 id='lumberjack-is-simple' class='heading'>Lumberjack is Simple</h4>
+<h3 id='lumberjack-is-simple' class='heading'>Lumberjack is Simple</h3>
 
 <p>It takes as little as a single line of code to configure lumberjack when your application launches. Then simply replace your NSLog statements with DDLog statements and that&rsquo;s about it. (And the DDLog macros have the exact same format and syntax as NSLog, so it&rsquo;s super easy.)</p>
-<h4 id='lumberjack-is-powerful' class='heading'>Lumberjack is Powerful:</h4>
+<h3 id='lumberjack-is-powerful' class='heading'>Lumberjack is Powerful:</h3>
 
 <p>One log statement can be sent to multiple loggers, meaning you can log to a file and the console simultaneously. Want more? Create your own loggers (it&rsquo;s easy) and send your log statements over the network. Or to a database or distributed file system. The sky is the limit.</p>
-<h4 id='lumberjack-is-flexible' class='heading'>Lumberjack is Flexible:</h4>
+<h3 id='lumberjack-is-flexible' class='heading'>Lumberjack is Flexible:</h3>
 
 <p>Configure your logging however you want. Change log levels per file (perfect for debugging). Change log levels per logger (verbose console, but concise log file). Change log levels per xcode configuration (verbose debug, but concise release). Have your log statements compiled out of the release build. Customize the number of log levels for your application. Add your own fine-grained logging. Dynamically change log levels during runtime. Choose how &amp; when you want your log files to be rolled. Upload your log files to a central server. Compress archived log files to save disk space&hellip;</p>
-<h3 id='this-framework-is-for-you-if' class='heading'>This framework is for you if:</h3>
+<h2 id='this-framework-is-for-you-if' class='heading'>This framework is for you if:</h2>
 
 <ul>
 <li>You&rsquo;re looking for a way to track down that impossible-to-reproduce bug that keeps popping up in the field.</li>
@@ -410,7 +433,7 @@ Otherwise, <code>#import &lt;CocoaLumberjack/CocoaLumberjack.h&gt;</code></p>
 <li>You&rsquo;re looking to take your application to the next level in terms of support and stability.</li>
 <li>You&rsquo;re looking for an enterprise level logging solution for your application (Mac or iPhone).</li>
 </ul>
-<h3 id='documentation' class='heading'>Documentation</h3>
+<h2 id='documentation' class='heading'>Documentation</h2>
 
 <ul>
 <li><strong><a href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/GettingStarted.md">Get started using Lumberjack</a></strong><br/></li>
@@ -424,22 +447,24 @@ Otherwise, <code>#import &lt;CocoaLumberjack/CocoaLumberjack.h&gt;</code></p>
 <li><a href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/AppCode-support.md">AppCode support</a></li>
 <li><strong><a href="Documentation/">Full Lumberjack documentation</a></strong><br/></li>
 </ul>
-<h3 id='requirements' class='heading'>Requirements</h3>
+<h2 id='requirements' class='heading'>Requirements</h2>
 
 <p>The current version of Lumberjack requires:</p>
 
 <ul>
-<li>Xcode 11 or later</li>
-<li>Swift 5.0 or later</li>
-<li>iOS 8 or later</li>
+<li>Xcode 12 or later</li>
+<li>Swift 5.3 or later</li>
+<li>iOS 9 or later</li>
 <li>macOS 10.10 or later</li>
 <li>watchOS 3 or later</li>
 <li>tvOS 9 or later</li>
 </ul>
-<h4 id='backwards-compatibility' class='heading'>Backwards compatibility</h4>
+<h3 id='backwards-compatibility' class='heading'>Backwards compatibility</h3>
 
 <ul>
+<li>for Xcode 11 and Swift up to 5.2, use the 3.6.2 version</li>
 <li>for Xcode 10 and Swift 4.2, use the 3.5.2 version</li>
+<li>for iOS 8, use the 3.6.1 version</li>
 <li>for iOS 6, iOS 7, OS X 10.8, OS X 10.9 and Xcode 9, use the 3.4.2 version</li>
 <li>for iOS 5 and OS X 10.7, use the 3.3 version</li>
 <li>for Xcode 8 and Swift 3, use the 3.2 version</li>
@@ -450,7 +475,7 @@ Otherwise, <code>#import &lt;CocoaLumberjack/CocoaLumberjack.h&gt;</code></p>
 <li>for Xcode 6 or earlier, use the 2.0.x version</li>
 <li>for OS X &lt; 10.7 support, use the 1.6.0 version</li>
 </ul>
-<h3 id='communication' class='heading'>Communication</h3>
+<h2 id='communication' class='heading'>Communication</h2>
 
 <ul>
 <li>If you <strong>need help</strong>, use <a href="http://stackoverflow.com/questions/tagged/lumberjack">Stack Overflow</a>. (Tag &lsquo;lumberjack&rsquo;)</li>
@@ -459,13 +484,53 @@ Otherwise, <code>#import &lt;CocoaLumberjack/CocoaLumberjack.h&gt;</code></p>
 <li>If you <strong>have a feature request</strong>, open an issue.</li>
 <li>If you <strong>want to contribute</strong>, submit a pull request.</li>
 </ul>
-<h3 id='author' class='heading'>Author</h3>
+<h2 id='data-collection-practices' class='heading'>Data Collection Practices</h2>
+
+<p>Per <a href="https://developer.apple.com/app-store/app-privacy-details/">App privacy details on the App Store</a>, Apple is requesting app developers to provide info about their data collection, us SDK maintainers must provide them with the same data.</p>
+<h3 id='data-collection-by-the-framework' class='heading'>Data collection by the framework</h3>
+
+<p><strong>By default, CocoaLumberjack does NOT collect any data on its own.</strong> </p>
+
+<p><a href="https://cocoalumberjack.github.io/DataCollection/index.html">See our Data Collection Practices list.</a></p>
+<h3 id='indirect-data-collection-through-the-framework' class='heading'>Indirect data collection through the framework</h3>
+
+<p>CocoaLumberjack is a logging framework which makes it easy to send those logs to different platforms.</p>
+
+<p>This is why collecting data might happen quite easily, if app developers include any sensitive data into their log messages.</p>
+
+<p><strong>Important note: app developers are fully responsible for any sensitive data collected through our logging system!</strong></p>
+
+<p>In consequence, you must comply to the Apple&rsquo;s privacy details policy (mentioned above) and document the ways in which user data is being collected.
+Since the number of scenarios where data might be indirectly collected through CocoaLumberjack is quite large, it&rsquo;s up to you, as app developers, to properly review your app&rsquo;s code and identify those cases.
+What we can do to help is raise awareness about potential data collection through our framework.</p>
+
+<p>Private data includes but isn&rsquo;t limited to:</p>
+
+<ul>
+<li>user info (name, email, address, &hellip;)</li>
+<li>location info</li>
+<li>contacts</li>
+<li>identifiers (user id, device id, &hellip;)</li>
+<li>app usage data</li>
+<li>performance data</li>
+<li>health and fitness info</li>
+<li>financial info</li>
+<li>sensitive info</li>
+<li>user content</li>
+<li>history (browsing, search, &hellip;)</li>
+<li>purchases</li>
+<li>diagnostics</li>
+<li>&hellip;</li>
+</ul>
+
+<p><em>Example</em>: <code>DDLogInfo(&quot;User: \(myUser)&quot;)</code> will add the <code>myUser</code> info to the logs, so if those are forwarded to a 3rd party or sent via email, that may qualify as data collection.</p>
+<h2 id='author' class='heading'>Author</h2>
 
 <ul>
 <li><a href="https://github.com/robbiehanson">Robbie Hanson</a></li>
 <li>Love the project? Wanna buy me a coffee? (or a beer :D) <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UZRA26JPJB3DA"><img src="http://www.paypal.com/en_US/i/btn/btn_donate_SM.gif" alt="donation"></a></li>
 </ul>
-<h3 id='collaborators' class='heading'>Collaborators</h3>
+<h2 id='collaborators' class='heading'>Collaborators</h2>
 
 <ul>
 <li><a href="https://github.com/rivera-ernesto">Ernesto Rivera</a></li>
@@ -480,18 +545,18 @@ Otherwise, <code>#import &lt;CocoaLumberjack/CocoaLumberjack.h&gt;</code></p>
 <li><a href="https://github.com/lolgear">Dmitry Lobanov</a></li>
 <li><a href="https://github.com/hhanesand">Hakon Hanesand</a></li>
 </ul>
-<h3 id='license' class='heading'>License</h3>
+<h2 id='license' class='heading'>License</h2>
 
 <ul>
 <li>CocoaLumberjack is available under the BSD 3 license. See the <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/LICENSE">LICENSE file</a>.</li>
 </ul>
-<h3 id='extensions' class='heading'>Extensions</h3>
+<h2 id='extensions' class='heading'>Extensions</h2>
 
 <ul>
 <li><a href="https://github.com/s4nchez/LogIO-CocoaLumberjack">LogIO-CocoaLumberjack</a> A log.io logger for CocoaLumberjack</li>
 <li><a href="https://github.com/0xced/XCDLumberjackNSLogger">XCDLumberjackNSLogger</a> CocoaLumberjack logger which sends logs to NSLogger</li>
 </ul>
-<h3 id='architecture' class='heading'>Architecture</h3>
+<h2 id='architecture' class='heading'>Architecture</h2>
 
 <p align="center" >
     <img src="https://raw.githubusercontent.com/CocoaLumberjack/CocoaLumberjack/master/Documentation/CocoaLumberjackClassDiagram.png" title="CocoaLumberjack class diagram">
@@ -500,8 +565,8 @@ Otherwise, <code>#import &lt;CocoaLumberjack/CocoaLumberjack.h&gt;</code></p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-05-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-11-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

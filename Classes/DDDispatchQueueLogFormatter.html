@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Class/DDDispatchQueueLogFormatter" class="dashAnchor"></a>
     <a title="DDDispatchQueueLogFormatter Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CocoaLumberjack 3.6.1 Docs</a> (64% documented)</p>
+        <p><a href="../index.html">CocoaLumberjack 3.7.0 Docs</a> (64% documented)</p>
         <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -284,7 +292,13 @@
             <h1>DDDispatchQueueLogFormatter</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">DDDispatchQueueLogFormatter</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols/DDLogFormatter.html">DDLogFormatter</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">DDDispatchQueueLogFormatter</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/DDLogFormatter.html">DDLogFormatter</a></span></code></pre>
 
                 </div>
               </div>
@@ -324,6 +338,9 @@
 <p>Note: If manually creating your own background threads (via <code>NSThread/alloc/init</code> or <code>NSThread/detachNeThread</code>),
  you can use <code>[[NSThread currentThread] setName:(NSString *)]</code>.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L112-L183">Show on GitHub</a>
+              </div>
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -359,7 +376,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L118">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L118">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -394,7 +411,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">mode</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDDispatchQueueLogFormatterMode.html">DDDispatchQueueLogFormatterMode</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">mode</span><span class="p">:</span> <span class="kt"><a href="../Enums/DDDispatchQueueLogFormatterMode.html">DDDispatchQueueLogFormatterMode</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -418,7 +435,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L125">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L125">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -468,7 +485,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L145">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L145">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -518,7 +535,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L165">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L165">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -560,7 +577,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L176">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L176">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -596,7 +613,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L181">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L181">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -644,7 +661,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L193">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L193">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -679,7 +696,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L198">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L198">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -715,7 +732,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L203">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L203">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -745,7 +762,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L208">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h#L208">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -755,8 +772,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-05-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-11-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

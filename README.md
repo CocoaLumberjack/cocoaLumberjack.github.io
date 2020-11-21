@@ -25,7 +25,7 @@ jazzy \
   --umbrella-header Sources/CocoaLumberjack/Supporting\ Files/CocoaLumberjack.h \
   --documentation=Documentation/\*.md \
   --module CocoaLumberjack \
-  --output ../cocoaLumberjack.github.io
+  --output ../cocoaLumberjack.github.io \
   --framework-root Sources
 ```
 

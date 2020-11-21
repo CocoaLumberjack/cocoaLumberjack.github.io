@@ -8,13 +8,21 @@
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a title="GettingStarted  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">CocoaLumberjack 3.6.1 Docs</a> (64% documented)</p>
+        <p><a href="index.html">CocoaLumberjack 3.7.0 Docs</a> (64% documented)</p>
         <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -401,8 +409,8 @@ github &quot;CocoaLumberjack/CocoaLumberjack&quot;
 
 <p>Part of the power of the logging framework is its flexibility. If you also wanted your log statements to be written to a file, then you could add and configure a file logger:</p>
 <pre class="highlight objective_c"><code><span class="n">DDFileLogger</span> <span class="o">*</span><span class="n">fileLogger</span> <span class="o">=</span> <span class="p">[[</span><span class="n">DDFileLogger</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span>
-<span class="n">fileLogger</span><span class="p">.</span><span class="n">rollingFrequency</span> <span class="o">=</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">24</span><span class="p">;</span> <span class="c1">// 24 hour rolling</span>
-<span class="n">fileLogger</span><span class="p">.</span><span class="n">logFileManager</span><span class="p">.</span><span class="n">maximumNumberOfLogFiles</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+<span class="n">fileLogger</span><span class="p">.</span><span class="n">rollingFrequency</span> <span class="o">=</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">24</span><span class="p">;</span> <span class="c1">// 24 hour rolling
+</span><span class="n">fileLogger</span><span class="p">.</span><span class="n">logFileManager</span><span class="p">.</span><span class="n">maximumNumberOfLogFiles</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
 
 <span class="p">[</span><span class="n">DDLog</span> <span class="nf">addLogger</span><span class="p">:</span><span class="n">fileLogger</span><span class="p">];</span>
 </code></pre>
@@ -419,12 +427,12 @@ github &quot;CocoaLumberjack/CocoaLumberjack&quot;
 <h3 id='convert-your-nslog-statements-to-ddlog' class='heading'>Convert your NSLog statements to DDLog</h3>
 
 <p>The DDLog header file defines the macros that you will use to replace your NSLog statements. Essentially they look like this:</p>
-<pre class="highlight objective_c"><code><span class="c1">// Convert from this:</span>
-<span class="n">NSLog</span><span class="p">(</span><span class="s">@"Broken sprocket detected!"</span><span class="p">);</span>
+<pre class="highlight objective_c"><code><span class="c1">// Convert from this:
+</span><span class="n">NSLog</span><span class="p">(</span><span class="s">@"Broken sprocket detected!"</span><span class="p">);</span>
 <span class="n">NSLog</span><span class="p">(</span><span class="s">@"User selected file:%@ withSize:%u"</span><span class="p">,</span> <span class="n">filePath</span><span class="p">,</span> <span class="n">fileSize</span><span class="p">);</span>
 
-<span class="c1">// To this:</span>
-<span class="n">DDLogError</span><span class="p">(</span><span class="s">@"Broken sprocket detected!"</span><span class="p">);</span>
+<span class="c1">// To this:
+</span><span class="n">DDLogError</span><span class="p">(</span><span class="s">@"Broken sprocket detected!"</span><span class="p">);</span>
 <span class="n">DDLogVerbose</span><span class="p">(</span><span class="s">@"User selected file:%@ withSize:%u"</span><span class="p">,</span> <span class="n">filePath</span><span class="p">,</span> <span class="n">fileSize</span><span class="p">);</span>
 </code></pre>
 
@@ -462,8 +470,8 @@ github &quot;CocoaLumberjack/CocoaLumberjack&quot;
 <p>(Of course there are many other advanced options, such as a global log level, per xcode configuration levels, per logger levels, etc. But we&rsquo;ll get to that in another article.)</p>
 
 <p>Here&rsquo;s all it takes to convert your log statements:</p>
-<pre class="highlight objective_c"><code><span class="c1">// CONVERT FROM THIS</span>
-
+<pre class="highlight objective_c"><code><span class="c1">// CONVERT FROM THIS
+</span>
 <span class="cp">#import "Sprocket.h"
 </span>
 <span class="k">@implementation</span> <span class="nc">Sprocket</span>
@@ -475,8 +483,8 @@ github &quot;CocoaLumberjack/CocoaLumberjack&quot;
 
 <span class="k">@end</span>
 
-<span class="c1">// TO THIS</span>
-
+<span class="c1">// TO THIS
+</span>
 <span class="cp">#import "Sprocket.h"
 #import "CocoaLumberjack.h"
 </span>
@@ -514,8 +522,8 @@ github &quot;CocoaLumberjack/CocoaLumberjack&quot;
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-05-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-11-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

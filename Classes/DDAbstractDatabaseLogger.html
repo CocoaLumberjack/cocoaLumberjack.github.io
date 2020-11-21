@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Class/DDAbstractDatabaseLogger" class="dashAnchor"></a>
     <a title="DDAbstractDatabaseLogger Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CocoaLumberjack 3.6.1 Docs</a> (64% documented)</p>
+        <p><a href="../index.html">CocoaLumberjack 3.7.0 Docs</a> (64% documented)</p>
         <p class="header-right"><a href="https://github.com/CocoaLumberjack/CocoaLumberjack"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -284,6 +292,7 @@
             <h1>DDAbstractDatabaseLogger</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">DDAbstractDatabaseLogger</span> <span class="p">:</span> <span class="nc"><a href="../Classes/DDAbstractLogger.html">DDAbstractLogger</a></span> <span class="p">{</span>
   <span class="n">NSUInteger</span> <span class="n">_saveThreshold</span><span class="p">;</span>
   <span class="n">NSTimeInterval</span> <span class="n">_saveInterval</span><span class="p">;</span>
@@ -299,6 +308,11 @@
 <span class="p">}</span></code></pre>
 
                 </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">DDAbstractDatabaseLogger</span> <span class="p">:</span> <span class="kt"><a href="../Classes/DDAbstractLogger.html">DDAbstractLogger</a></span></code></pre>
+
+                </div>
               </div>
             <p>This class provides an abstract implementation of a database logger.</p>
 
@@ -306,6 +320,9 @@
  All that is needed for a concrete database logger is to extend this class
  and override the methods in the implementation file that are prefixed with &ldquo;db_&rdquo;.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L32-L125">Show on GitHub</a>
+              </div>
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -335,7 +352,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -365,7 +382,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -395,7 +412,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -425,7 +442,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -455,7 +472,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -485,7 +502,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -515,7 +532,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -545,7 +562,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -575,7 +592,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -605,7 +622,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -635,7 +652,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -690,7 +707,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L70">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L70">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -725,7 +742,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L75">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L75">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -783,7 +800,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L103">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L103">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -818,7 +835,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L108">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L108">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -853,7 +870,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L113">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L113">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -888,7 +905,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L118">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L118">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -923,7 +940,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.6.1/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L123">Show on GitHub</a>
+                        <a href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/3.7.0/Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h#L123">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -933,8 +950,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-05-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="external">CocoaLumberjack</a>. All rights reserved. (Last updated: 2020-11-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
